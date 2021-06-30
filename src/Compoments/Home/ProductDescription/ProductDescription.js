@@ -1,5 +1,4 @@
 import React from "react";
-// import { SectionHeader } from ".../";
 import styles from "./ProductDescription.module.css";
 
 export default function Product({ name, description, url }) {

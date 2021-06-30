@@ -4,22 +4,24 @@ import { UserIcon } from "../../assets/icon/UserIcon";
 import { CartIcon } from "../../assets/icon/CartIcon";
 import styles from "./Navbar.module.css";
 
-export default function Navbar() {
+export default function Navbar({ fill, color }) {
   return (
     <header className={styles.headr}>
       <nav className={styles.header}>
         <div className={styles.logo}>
           <div>
-            <MenuIcon />
+            <MenuIcon color={color} />
           </div>
-          <a className={styles.company_name} href="/">K store</a>
+          <a style={{color: `${color}`}} className={styles.company_name} href="/">
+            K store
+          </a>
         </div>
         <div className={styles.user}>
           <div>
-            <UserIcon />
+            <UserIcon fill={fill} />
           </div>
           <div>
-            <CartIcon />
+            <CartIcon fill={fill} />
           </div>
         </div>
       </nav>

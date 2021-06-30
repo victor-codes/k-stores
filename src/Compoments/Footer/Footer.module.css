@@ -41,7 +41,7 @@
 }
 
 .heading_4 {
-    font-family: "Oswald", sans-serif !important;
+    font-family: "Oswald", serif !important;
     font-style: normal;
     display: inline-block;
     font-weight: 500;
@@ -73,7 +73,7 @@
 }
 
 .navlink_category {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1.3rem;
@@ -123,8 +123,7 @@
 }
 
 .gap_10 {
-    font-family: "Oswald",
-        sans-serif !important;
+    font-family: "Oswald", serif;
     font-style: normal;
     display: inline-block;
     font-weight: 500;

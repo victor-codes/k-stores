@@ -8,7 +8,7 @@ body {
 *::after {
   font: 62.5% "Oswald",
     sans-serif;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .flex {
@@ -28,10 +28,16 @@ body {
 
 .no_underline {
   text-decoration: none;
+  width: fit-content;
 }
 
 p,
-h4 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -47,6 +53,7 @@ h4 {
 .margin {
   gap: 8px;
   margin-left: 16px;
+  width: fit-content;
 }
 
 @media screen and (min-width: 768px) {
@@ -69,4 +76,5 @@ section .flex_row_gap::-webkit-scrollbar {
 .column_gap {
   gap: 16px;
   margin-top: 120px;
+  align-items: center;
 }
