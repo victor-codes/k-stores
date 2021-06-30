@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.App,
+body {
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  font: 62.5% "Oswald",
+    sans-serif;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section_container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 40px;
+  margin: 56px auto 0;
+  max-width: 992px;
 }
 
-.App-link {
-  color: #61dafb;
+.no_underline {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+p,
+h4 {
+  margin: 0;
+}
+
+.flex_row_gap {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 16px;
+  overflow: auto;
+}
+
+.margin {
+  gap: 8px;
+  margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .margin {
+    margin-left: 0px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+section .flex_row_gap::-webkit-scrollbar {
+  display: none;
+}
+
+.arrow-right {
+  position: absolute;
+  right: 16px;
+  top: 29px;
+}
+
+.column_gap {
+  gap: 16px;
+  margin-top: 120px;
 }
