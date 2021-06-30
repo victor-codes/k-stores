@@ -78,3 +78,11 @@ section .flex_row_gap::-webkit-scrollbar {
   margin-top: 120px;
   align-items: center;
 }
+
+.padding {
+  padding: 0 16px;
+}
+
+.margin_4 {
+  margin-top: 4px;
+}

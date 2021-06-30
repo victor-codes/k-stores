@@ -1,0 +1,64 @@
+.flex_gap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.sub_heading {
+    height: 24px;
+    font-family: "Oswald", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0015em;
+}
+
+.margin_40 {
+    margin: 40px 0 56px;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin-top: 16px;
+}
+
+.caption {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.004em;
+    color: #000000;
+}
+
+.total_container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2px;
+}
+
+.sub_heading_2 {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    /* or 160% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0015em;
+
+    color: #000000;
+}
