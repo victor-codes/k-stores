@@ -49,16 +49,13 @@
 }
 
 .sub_heading_2 {
-    font-family: Oswald;
+    font-family: "Oswald", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 29px;
-    /* or 160% */
-
     display: flex;
     align-items: center;
     letter-spacing: 0.0015em;
-
     color: #000000;
 }

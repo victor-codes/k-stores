@@ -25,7 +25,7 @@ export default function Cart() {
           </div>
         </div>
         <div className={styles.margin_40}>
-          <Button type="primary" />
+          <Button type="primary" value="Proceed to Checkout" />
         </div>
       </div>
     </div>

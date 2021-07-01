@@ -36,7 +36,7 @@ export default function ProductInfo() {
               venenatis, eu neque nulla pellentesque pellentesque. Feugiat
               cursus lectus volutpat sed ut.
             </p>
-            <Button type="primary" />
+            <Button type="primary" value="Add to cart" />
           </div>
         </div>
       </div>

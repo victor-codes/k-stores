@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 4px 4px 0px;
+    margin: 48px 16px 0;
+}
+
+.close_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 20px;
+    letter-spacing: 0.0025em;
+    gap: 5px;
+    color: #000000;
+}
+
+.company_name {
+    font-family: "Overlock"serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.015em;
+    color: #000000;
+}
+
+.div_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0px;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    height: 100vh;
+    padding: 0 16px;
+}
+
+.sub_heading_1 {
+    font-family: "Oswald", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 29px;
+    letter-spacing: 0.0015em;
+    color: #000000;
+}
+
+.body_1 {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.7rem;
+    line-height: 23px;
+    letter-spacing: 0.005em;
+    color: #2B2B2B;
+    text-decoration: none;
+}
