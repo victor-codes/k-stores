@@ -9338,6 +9338,16 @@ react-scripts@4.0.3:
   optionalDependencies:
     fsevents "^2.1.3"
 
+react-spring-carousel-js@^1.9.21-beta.6:
+  version "1.9.21-beta.6"
+  resolved "https://registry.yarnpkg.com/react-spring-carousel-js/-/react-spring-carousel-js-1.9.21-beta.6.tgz#1ebbee2662674127918d8899c4c0ca034dc46c68"
+  integrity sha512-T5mgx/TePw4yFnvmcyZEl/18wSt+AKxNCamuWQHaFroEseI/rYmJFP0zoYz3VjU/BlwTSkumxfFDCuWqxZ2hPw==
+  dependencies:
+    react-spring "^9.2.3"
+    react-use-gesture "^9.1.3"
+    rxjs "^6.6.7"
+    screenfull "^5.1.0"
+
 react-spring@^9.2.3:
   version "9.2.3"
   resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-9.2.3.tgz#ff644f8857782389b47171239ee8dead372ebd46"
@@ -9349,6 +9359,11 @@ react-spring@^9.2.3:
     "@react-spring/three" "~9.2.0"
     "@react-spring/web" "~9.2.0"
     "@react-spring/zdog" "~9.2.0"
+
+react-use-gesture@^9.1.3:
+  version "9.1.3"
+  resolved "https://registry.yarnpkg.com/react-use-gesture/-/react-use-gesture-9.1.3.tgz#92bd143e4f58e69bd424514a5bfccba2a1d62ec0"
+  integrity sha512-CdqA2SmS/fj3kkS2W8ZU8wjTbVBAIwDWaRprX7OKaj7HlGwBasGEFggmk5qNklknqk9zK/h8D355bEJFTpqEMg==
 
 react@^17.0.2:
   version "17.0.2"
@@ -9918,6 +9933,11 @@ schema-utils@^3.0.0:
     "@types/json-schema" "^7.0.6"
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
+
+screenfull@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/screenfull/-/screenfull-5.1.0.tgz#85c13c70f4ead4c1b8a935c70010dfdcd2c0e5c8"
+  integrity sha512-dYaNuOdzr+kc6J6CFcBrzkLCfyGcMg+gWkJ8us93IQ7y1cevhQAugFsaCdMHb6lw8KV3xPzSxzH7zM1dQap9mA==
 
 select-hose@^2.0.0:
   version "2.0.0"

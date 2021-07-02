@@ -98,3 +98,8 @@ section .flex_row_gap::-webkit-scrollbar {
     padding: 0;
   }
 }
+
+button {
+  background-color: unset;
+  border: none;
+}

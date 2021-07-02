@@ -1,9 +1,11 @@
 import React from "react";
 import "../../../src/slider.css";
 
-export const RightSlider = () => {
+export const RightSlider = ({ onclick, type }) => {
   return (
     <svg
+      type={type}
+      onClick={onclick}
       className="right"
       width="104"
       height="104"

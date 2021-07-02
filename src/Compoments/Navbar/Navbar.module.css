@@ -1,4 +1,6 @@
 .header {
+    position: sticky;
+    /* left: calc(100vw); */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,6 +9,7 @@
     width: 100%;
     max-width: 1136px;
     margin: auto;
+    z-index: 100;
 }
 
 .category_nav {
@@ -43,7 +46,7 @@
 
     .logo_and_link {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         gap: 56px;
         width: 100%;
         max-width: 308px;
