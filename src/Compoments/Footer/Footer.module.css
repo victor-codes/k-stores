@@ -12,6 +12,15 @@
 .email {
     position: relative;
     width: fit-content;
+    height: 74px;
+    width: 100%;
+    max-width: 318px;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .mail_text {
@@ -21,15 +30,15 @@
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 0.0025em;
-    height: 68px;
-    width: 292px;
+    margin: 2px 0 38px;
+    width: 100%;
+    max-width: 460.97px;
 
 }
 
 .input_field {
-    height: 74px;
     width: 100%;
-    max-width: 318px;
+    height: 100%;
     font-family: "Nunito", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -49,10 +58,6 @@
     line-height: 19px;
     letter-spacing: 0.0125em;
     color: #000000;
-    height: 24px;
-    width: 239px;
-    margin-left: 12px;
-
 }
 
 .heading_1 {
@@ -69,7 +74,9 @@
 }
 
 .nav {
-    margin-top: 96px;
+    margin: 96px auto 0;
+    width: 100%;
+    max-width: 1136px;
 }
 
 .navlink_category {
@@ -79,7 +86,7 @@
     font-size: 1.3rem;
     line-height: 19px;
     letter-spacing: 0.0125em;
-    width: 140px;
+    width: 148px;
 }
 
 .navlink_category div {
@@ -97,8 +104,6 @@
     color: #6A6161;
 }
 
-
-
 .wrap {
     display: flex;
     flex-wrap: wrap;
@@ -110,7 +115,7 @@
 .text_size {
     font-style: normal;
     font-weight: normal;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 24px;
     color: #606060;
 }
@@ -134,7 +139,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 48px;
+    gap: 6px;
 }
 
 .copyright {
@@ -144,4 +149,46 @@
     line-height: 24px;
     color: #6A6161;
     margin: 32px 0 93px;
+}
+
+@media screen and (min-width: 768px) {
+    .email {
+        max-width: 536px;
+    }
+
+    .footer {
+        padding: 0 24px;
+    }
+
+    .address {
+        margin-top: 76px;
+        gap: 45px;
+    }
+
+    .mail_section {
+        max-width: 992px;
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width: 990px) {
+    .mail_section {
+        flex-direction: row;
+    }
+
+    .navlink {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .address {
+        margin-top: 0;
+        gap: 37px;
+    }
+
+    .mail_text {
+        margin-bottom: 0px;
+    }
 }

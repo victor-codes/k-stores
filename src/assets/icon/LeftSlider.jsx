@@ -1,18 +1,19 @@
 import React from "react";
+import "../../../src/slider.css";
 
-export const ChervonRight = () => {
+export const LeftSlider = () => {
   return (
     <svg
-      width="16"
-      height="16"
-      viewBox="0 0 16 16"
-      className={StyleSheet.chervon_right}
+      className="left"
+      width="104"
+      height="104"
+      viewBox="0 0 104 104"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M6 3.3335L10.6667 8.00016L6 12.6668"
-        stroke="#555555"
+        d="M65 82.3332L34.6666 51.9999L65 21.6666"
+        stroke="black"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"

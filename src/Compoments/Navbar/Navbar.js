@@ -8,13 +8,35 @@ export default function Navbar({ fill, color }) {
   return (
     <header className={styles.headr}>
       <nav className={styles.header}>
-        <div className={styles.logo}>
-          <div>
-            <MenuIcon color={color} />
+        <div className={styles.logo_and_link}>
+          <div className={styles.logo}>
+            <div className={styles.menu}>
+              <MenuIcon color={color} />
+            </div>
+            <a
+              style={{ color: `${color}` }}
+              className={styles.company_name}
+              href="/"
+            >
+              K store
+            </a>
           </div>
-          <a style={{color: `${color}`}} className={styles.company_name} href="/">
-            K store
-          </a>
+          <div className={styles.category_nav}>
+            <a
+              style={{ color: `${color}` }}
+              className={styles.category_link}
+              href=""
+            >
+              Cloths
+            </a>
+            <a
+              style={{ color: `${color}` }}
+              className={styles.category_link}
+              href=""
+            >
+              Shoes
+            </a>
+          </div>
         </div>
         <div className={styles.user}>
           <div>

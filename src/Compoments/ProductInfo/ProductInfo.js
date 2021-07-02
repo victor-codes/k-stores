@@ -19,6 +19,7 @@ export default function ProductInfo() {
             <img className={styles.product_other_img} src="" alt="" />
           </div>
         </div>
+        <div className={styles.line_divider}></div>
         <div className={styles.product_info}>
           <div>
             <div className={styles.heading_container}>

@@ -86,3 +86,15 @@ section .flex_row_gap::-webkit-scrollbar {
 .margin_4 {
   margin-top: 4px;
 }
+
+@media screen and (min-width: 768px) {
+  .section_container {
+    padding: 0 0 0 24px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .section_container {
+    padding: 0;
+  }
+}

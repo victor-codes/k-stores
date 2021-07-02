@@ -4,7 +4,7 @@ import styles from "./Sidebar.module.css";
 
 export default function Sdebar() {
   return (
-    <div>
+    <div className={styles.sidebar_container}>
       <nav>
         <div className={styles.header}>
           <h1 className={styles.company_name}>K store</h1>

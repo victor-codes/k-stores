@@ -4,6 +4,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 13px 16px;
+    width: 100%;
+    max-width: 1136px;
+    margin: auto;
+}
+
+.category_nav {
+    display: none;
 }
 
 .logo,
@@ -20,7 +27,6 @@
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 29px;
     letter-spacing: -0.015em;
     text-align: left;
     text-decoration: none;
@@ -28,4 +34,41 @@
 
 .user {
     gap: 16px;
+}
+
+@media screen and (min-width: 432px) {
+    .menu {
+        display: none;
+    }
+
+    .logo_and_link {
+        display: flex;
+        align-items: center;
+        gap: 56px;
+        width: 100%;
+        max-width: 308px;
+    }
+
+    .category_nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+    }
+
+    .category_link {
+        display: inline-flex;
+        font-family: "Nunito", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        line-height: 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.0025em;
+    }
+
+
 }
