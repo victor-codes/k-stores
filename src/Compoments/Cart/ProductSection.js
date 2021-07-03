@@ -8,7 +8,7 @@ export default function PrductSection({ url }) {
   return (
     <div className={styles.product_section}>
       <img className={styles.cart_product_image} src={url} alt="product_name" />
-      <div>
+      <div style={{width: "-webkit-fill-available"}}>
         <div className={styles.product_section_info}>
           <div className={styles.heading_container}>
             <p className={styles.body_2}>Product Name</p>

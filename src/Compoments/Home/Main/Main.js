@@ -7,6 +7,9 @@ import { RightSlider } from "../../../assets/icon/RightSlider";
 export default function Main() {
   const { carouselFragment, slideToPrevItem, slideToNextItem } =
     useSpringCarousel({
+      springConfig: {
+        easing: 400
+      },
       items: [
         {
           id: "1",
@@ -14,7 +17,7 @@ export default function Main() {
             <div>
               <img className={styles.main_image} src="/main_image.png" alt="" />
               <div
-                style={{ backgroundColor: "#CC021C" }}
+                style={{ backgroundColor: "#CC021C", zIndex: "-10" }}
                 className={styles.background}
               ></div>
             </div>

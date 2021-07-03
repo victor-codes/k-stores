@@ -36,7 +36,7 @@
     width: 100%;
     max-width: 1136px;
     margin: auto;
-    z-index: 100;
+    z-index: 1;
 }
 
 .main_image {
@@ -48,6 +48,7 @@
     height: 90%;
     filter: drop-shadow(-14px 23px 33px rgba(0, 0, 0, 0.15));
     object-fit: contain;
+    z-index: -9;
 }
 
 .cta_btn {
@@ -139,6 +140,7 @@
     justify-content: space-between;
     max-width: 1344px;
     padding: 0px;
+    z-index: 10;
 }
 
 .chervon_left,
