@@ -3,6 +3,7 @@
     max-width: 163px;
     height: 128px;
     border: 2px solid #eee;
+    object-fit: cover;
 }
 
 .sub_heading {

@@ -20,6 +20,7 @@
     align-items: flex-start;
     padding: 0px;
     object-fit: cover;
+    border: 1px solid #eee;
 }
 
 .product_name {

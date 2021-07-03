@@ -35,41 +35,39 @@ export default function Footer() {
               <div className={styles.navlink_category}>
                 MENS
                 <div>
-                  <a href="">Tshirts</a>
-                  <a href="">Shirts</a>
-                  <a href="">Sweaters</a>
-                  <a href="">Jeans</a>
-                  <a href="">Jackets</a>
-                  <a href="">Accessories</a>
-                  <a href="">Lookbook</a>
+                  <a href="/tshirts">Tshirts</a>
+                  <a href="/shirts">Shirts</a>
+                  <a href="/sweaters">Sweaters</a>
+                  <a href="/jeans">Jeans</a>
+                  <a href="/jackets">Jackets</a>
+                  <a href="/accessories">Accessories</a>
                 </div>
               </div>
               <div className={styles.navlink_category}>
                 WOMENS
                 <div>
-                  <a href="">Tops</a>
-                  <a href="">Sweaters</a>
-                  <a href="">Dresses</a>
-                  <a href="">Jeans</a>
-                  <a href="">Jackets</a>
-                  <a href="">Accessories</a>
-                  <a href="">Lookbook</a>
+                  <a href="/tops">Tops</a>
+                  <a href="/sweaters">Sweaters</a>
+                  <a href="/dresses">Dresses</a>
+                  <a href="/jeans">Jeans</a>
+                  <a href="/jackets">Jackets</a>
+                  <a href="/accessories">Accessories</a>
                 </div>
               </div>
               <div className={styles.navlink_category}>
                 SITE
                 <div>
-                  <a href="">Journal</a>
-                  <a href="">About</a>
-                  <a href="">Our Story</a>
+                  <a href="/journal">Journal</a>
+                  <a href="/about">About</a>
+                  <a href="/our-story">Our Story</a>
                 </div>
               </div>
               <div className={styles.navlink_category}>
                 SUPPORT
                 <div>
-                  <a href="">Shipping and Delivery</a>
-                  <a href="">Returns Policy</a>
-                  <a href="">Privacy Policy</a>
+                  <a href="/shipping-and-delivery">Shipping and Delivery</a>
+                  <a href="/returns-policy">Returns Policy</a>
+                  <a href="/privacy-policy">Privacy Policy</a>
                 </div>
               </div>
             </div>
@@ -94,8 +92,7 @@ export default function Footer() {
             <SocialMedia />
           </div>
           <p className={styles.copyright}>
-            © 2020 Vespi. All rights reserved. This is a Process Masterclass
-            lesson.{" "}
+            © 2020 K store. All rights reserved.
           </p>
         </nav>
       </div>

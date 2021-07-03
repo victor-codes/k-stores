@@ -4,7 +4,7 @@ import styles from "./SectionHeader.module.css";
 
 export const SectionHeader = ({ name }) => {
   return (
-    <a href="" className="no_underline">
+    <a href="/" className="no_underline">
       <div
         className="flex margin"
       >
