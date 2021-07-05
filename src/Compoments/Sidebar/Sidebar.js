@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
+import { animated, config, useSpring } from "react-spring";
 import { Close } from "../../assets/icon/Close";
 import styles from "./Sidebar.module.css";
+import { SidebarContext } from "../../context/Sidebar";
 
-export default function Sdebar() {
+export default function Sidebar() {
+
+
+  const { toggle, setToggle } = useContext(SidebarContext);
+
+  const sidebar = useSpring({
+    transform: toggle ? `translateX(0%)` : `translateX(-100%)`,
+    config: { ...config.gentle, duration: 800 },
+  });
+
+
   return (
-    <div className={styles.sidebar_container}>
+    <animated.div style={sidebar} className={styles.sidebar_container}>
       <nav>
         <div className={styles.header}>
           <h1 className={styles.company_name}>K store</h1>
           <div className={styles.close_btn}>
-            <Close />
-            Close
+            <button className={styles.close_btn} onClick={() => setToggle(false)}>
+              <Close />
+              Close
+            </button>
           </div>
         </div>
         <div className={styles.content}>
@@ -46,6 +60,6 @@ export default function Sdebar() {
           </div>
         </div>
       </nav>
-    </div>
+    </animated.div>
   );
 }

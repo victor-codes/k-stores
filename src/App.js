@@ -3,11 +3,17 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProductInfo from "./Compoments/ProductInfo/ProductInfo";
 import Cart from "./Compoments/Cart/Cart";
 import Home from "./Compoments/Home/Home";
-import Sidebar from "./Compoments/Sidebar/Sidebar";
+import ToggleProvider from "./context/Sidebar";
+import { SidebarContext } from "./context/Sidebar";
+import { lazy, useContext, useState, Suspense } from "react";
 
 function App() {
+  const Sidebar = lazy(() => import("./Compoments/Sidebar/Sidebar"));
   return (
     <Router basename="/">
+      <Suspense fallback={<div>Loading...</div>}>
+        <Sidebar />
+      </Suspense>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -18,9 +24,7 @@ function App() {
         <Route path="/cart">
           <Cart />
         </Route>
-        <Route path="/sidebar">
-          <Sidebar />
-        </Route>
+        <Route path="/sidebar"></Route>
       </Switch>
     </Router>
   );
