@@ -94,7 +94,7 @@
     flex-direction: column;
 }
 
-.navlink_category div a {
+.navlink_category div p {
     font-style: normal;
     font-weight: normal;
     font-size: 1.5rem;

@@ -4,6 +4,7 @@ import Main from "./Main/Main";
 import Footer from "../Footer/Footer";
 import Product from "./ProductDescription/ProductDescription";
 import { SectionHeader } from "../../utils/SectionHeader/SectionHeader";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -14,11 +15,13 @@ export default function Home() {
         <section>
           <SectionHeader name="MEN SHOES" />
           <div className="flex_row_gap">
-            <Product
-              name="Product name"
-              description="$ 125"
-              url="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=708&q=80"
-            />
+            <Link to="/product">
+              <Product
+                name="Product name"
+                description="$ 125"
+                url="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=708&q=80"
+              />
+            </Link>
             <Product
               name="Product name"
               description="$ 125"

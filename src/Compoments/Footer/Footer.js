@@ -35,39 +35,39 @@ export default function Footer() {
               <div className={styles.navlink_category}>
                 MENS
                 <div>
-                  <a href="/tshirts">Tshirts</a>
-                  <a href="/shirts">Shirts</a>
-                  <a href="/sweaters">Sweaters</a>
-                  <a href="/jeans">Jeans</a>
-                  <a href="/jackets">Jackets</a>
-                  <a href="/accessories">Accessories</a>
+                  <p>Tshirts</p>
+                  <p>Shirts</p>
+                  <p>Sweaters</p>
+                  <p>Jeans</p>
+                  <p>Jackets</p>
+                  <p>Accessories</p>
                 </div>
               </div>
               <div className={styles.navlink_category}>
                 WOMENS
                 <div>
-                  <a href="/tops">Tops</a>
-                  <a href="/sweaters">Sweaters</a>
-                  <a href="/dresses">Dresses</a>
-                  <a href="/jeans">Jeans</a>
-                  <a href="/jackets">Jackets</a>
-                  <a href="/accessories">Accessories</a>
+                  <p>Tops</p>
+                  <p>Sweaters</p>
+                  <p>Dresses</p>
+                  <p>Jeans</p>
+                  <p>Jackets</p>
+                  <p>Accessories</p>
                 </div>
               </div>
               <div className={styles.navlink_category}>
                 SITE
                 <div>
-                  <a href="/journal">Journal</a>
-                  <a href="/about">About</a>
-                  <a href="/our-story">Our Story</a>
+                  <p>Journal</p>
+                  <p>About</p>
+                  <p>Our Story</p>
                 </div>
               </div>
               <div className={styles.navlink_category}>
                 SUPPORT
                 <div>
-                  <a href="/shipping-and-delivery">Shipping and Delivery</a>
-                  <a href="/returns-policy">Returns Policy</a>
-                  <a href="/privacy-policy">Privacy Policy</a>
+                  <p>Shipping and Delivery</p>
+                  <p>Returns Policy</p>
+                  <p>Privacy Policy</p>
                 </div>
               </div>
             </div>

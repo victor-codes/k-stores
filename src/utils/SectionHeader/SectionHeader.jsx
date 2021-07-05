@@ -3,8 +3,9 @@ import { ChervonRight } from "../../assets/icon/ChervonRight";
 import styles from "./SectionHeader.module.css";
 
 export const SectionHeader = ({ name }) => {
+  let link = name.toLowerCase().split(" ").join("/")
   return (
-    <a href="/" className="no_underline">
+    <a href={`/${link}`} className="no_underline">
       <div
         className="flex margin"
       >

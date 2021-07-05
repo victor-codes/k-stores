@@ -56,12 +56,10 @@ export default function Main() {
       ],
     });
 
-
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [blink, setBlink] = useState(true);
   const [reverse, setReverse] = useState(false);
-
 
   // typeWriter effect
   useEffect(() => {

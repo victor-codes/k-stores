@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Navbar from "../Navbar/Navbar";
 import styles from "./ProductInfo.module.css";
 import { Button } from "../Button/Button";
+import { CartContext } from "../../context/CartContext";
 
 export default function ProductInfo() {
+  const { cartItem, setCartItem } = useContext(CartContext);
+
   return (
     <div className="App">
       <Navbar fill="#555555" color="#000" />
@@ -11,12 +14,36 @@ export default function ProductInfo() {
         <div className={styles.img_container}>
           <img className={styles.product_img} src="/main_image.png" alt="" />
           <div className={styles.product_other_img_container}>
-            <img className={styles.product_other_img} src="" alt="" />
-            <img className={styles.product_other_img} src="" alt="" />
-            <img className={styles.product_other_img} src="" alt="" />
-            <img className={styles.product_other_img} src="" alt="" />
-            <img className={styles.product_other_img} src="" alt="" />
-            <img className={styles.product_other_img} src="" alt="" />
+            <img
+              className={styles.product_other_img}
+              src="/main_image.png"
+              alt="main-page"
+            />
+            <img
+              className={styles.product_other_img}
+              src="/main_image.png"
+              alt="main-page"
+            />
+            <img
+              className={styles.product_other_img}
+              src="/main_image.png"
+              alt="main-page"
+            />
+            <img
+              className={styles.product_other_img}
+              src="/main_image.png"
+              alt="main-page"
+            />
+            <img
+              className={styles.product_other_img}
+              src="/main_image.png"
+              alt="main-page"
+            />
+            <img
+              className={styles.product_other_img}
+              src="/main_image.png"
+              alt="main-page"
+            />
           </div>
         </div>
         <div className={styles.line_divider}></div>
@@ -37,7 +64,22 @@ export default function ProductInfo() {
               venenatis, eu neque nulla pellentesque pellentesque. Feugiat
               cursus lectus volutpat sed ut.
             </p>
-            <Button type="primary" value="Add to cart" />
+            <button
+              style={{ width: "-webkit-fill-available", padding: "0px" }}
+              onClick={() => {
+                setCartItem([
+                  {
+                    product_name: "product name",
+                    product_img: "product_img",
+                    product_desc: "product desc",
+                    price: "$ 25",
+                  },
+                  ...cartItem
+                ]);
+              }}
+            >
+              <Button type="primary" value="Add to cart" />
+            </button>
           </div>
         </div>
       </div>
