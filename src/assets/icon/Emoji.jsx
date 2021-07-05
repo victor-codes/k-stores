@@ -13,7 +13,7 @@ export const Emoji = () => {
       <path
         d="M3 8.5C5.5 10.5 8.5 10.5 11 8.5"
         stroke="white"
-        stroke-width="1.5"
+        strokeWidth="1.5"
       />
       <circle cx="4" cy="5" r="1" fill="white" />
       <circle cx="10" cy="5" r="1" fill="white" />

@@ -11,7 +11,7 @@ export default function Sidebar() {
 
   const sidebar = useSpring({
     transform: toggle ? `translateX(0%)` : `translateX(-100%)`,
-    config: { ...config.gentle, duration: 800 },
+    config: { ...config.gentle, duration: 500 },
   });
 
 

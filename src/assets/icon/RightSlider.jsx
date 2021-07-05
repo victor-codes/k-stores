@@ -16,9 +16,9 @@ export const RightSlider = ({ onclick, type }) => {
       <path
         d="M39 21.6666L69.3333 51.9999L39 82.3332"
         stroke="black"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 4px 4px 4px 0px;
-    margin: 48px 16px 0;
+    margin: 16px 16px 0;
 }
 
 .close_btn {
@@ -87,6 +87,7 @@
 @media screen and (min-width: 540px) {
 
     .sidebar_container {
+        display: none;
         width: 50%;
         box-shadow: 32px 0px 250px rgba(0, 0, 0, 0.25);
     }

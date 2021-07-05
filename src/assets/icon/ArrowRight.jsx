@@ -13,9 +13,9 @@ export const ArrowRight = () => {
       <path
         d="M14 8.00016H2M11.3333 5.3335L14 8.00016L11.3333 5.3335ZM14 8.00016L11.3333 10.6668L14 8.00016Z"
         stroke="black"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

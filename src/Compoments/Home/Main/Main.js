@@ -56,12 +56,14 @@ export default function Main() {
       ],
     });
 
+
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [blink, setBlink] = useState(true);
   const [reverse, setReverse] = useState(false);
 
-  // typeWriter
+
+  // typeWriter effect
   useEffect(() => {
     if (index === words.length) return;
 
@@ -85,7 +87,7 @@ export default function Main() {
     }, Math.max(reverse ? 75 : subIndex === words[index].length ? 100 : 100, parseInt(Math.random() * 1)));
 
     return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse]);
+  }, [subIndex, index, reverse, words]);
 
   // blinker
   useEffect(() => {
@@ -101,7 +103,6 @@ export default function Main() {
       <div className={styles.heading_container}>
         <h1 className={styles.absolute_h1}>
           {`${words[index].substring(0, subIndex)}${blink ? "" : " "}`}
-          {/* THE LAST TREND IS HERE */}
         </h1>
       </div>
       <div className={styles.absolute_center}>{carouselFragment}</div>

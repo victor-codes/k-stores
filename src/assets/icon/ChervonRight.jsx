@@ -13,9 +13,9 @@ export const ChervonRight = () => {
       <path
         d="M6 3.3335L10.6667 8.00016L6 12.6668"
         stroke="#555555"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

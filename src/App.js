@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ProductInfo from "./Compoments/ProductInfo/ProductInfo";
 import Cart from "./Compoments/Cart/Cart";
 import Home from "./Compoments/Home/Home";
-import ToggleProvider from "./context/Sidebar";
-import { SidebarContext } from "./context/Sidebar";
-import { lazy, useContext, useState, Suspense } from "react";
+import { lazy, Suspense } from "react";
 
 function App() {
   const Sidebar = lazy(() => import("./Compoments/Sidebar/Sidebar"));

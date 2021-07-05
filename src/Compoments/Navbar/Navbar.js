@@ -4,7 +4,6 @@ import { UserIcon } from "../../assets/icon/UserIcon";
 import { CartIcon } from "../../assets/icon/CartIcon";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
-import { Sidebar } from "../Sidebar/Sidebar";
 
 export default function Navbar({ fill, color, sidebar }) {
   return (
