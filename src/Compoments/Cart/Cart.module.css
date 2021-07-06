@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-top: 16px;
+    max-width: 704px;
+    width: -webkit-fill-available;
 }
 
 .sub_heading {
@@ -12,6 +13,7 @@
     font-weight: normal;
     font-size: 18px;
     display: flex;
+    width: -webkit-fill-available;
     align-items: center;
     letter-spacing: 0.0015em;
 }
@@ -25,12 +27,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 704px;
     padding: 0px;
     margin-top: 16px;
 }
 
 .caption {
-    font-family: Nunito;
+    font-family: "Nunito", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -59,3 +62,168 @@
     letter-spacing: 0.0015em;
     color: #000000;
 }
+
+.heading_6 {
+    font-family: "Oswald", serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0.0015em;
+    text-align: center;
+    color: #2B2B2B;
+}
+
+.text_size {
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.005em;
+    width: 100%;
+    max-width: 343px;
+    /* margin-top: 16px; */
+    color: #555555;
+}
+
+.empty_cart_message_flex {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    /* height: calc(100vh - 101px); */
+    gap: 24px;
+    width: -webkit-fill-available;
+    max-width: 704px;
+}
+
+.price_text {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.0025em;
+
+    color: #000000;
+}
+
+.price_header {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.0025em;
+
+    color: #000000;
+}
+
+.heading_summary {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    /* identical to box height, or 160% */
+
+    letter-spacing: 0.0015em;
+
+    color: #000000;
+}
+
+.summary_section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;
+    gap: 24px;
+    /* max-width: 272px; */
+}
+
+.summary_2 {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    padding: 0px;
+    gap: 16px;
+}
+
+.inside_summary_container {
+    display: flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.line_divider {
+    width: -webkit-fill-available;
+    height: 1px;
+    background: #555555;
+}
+
+.cart_section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 16px;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+@media screen and (max-width: 929px) {
+    .cart_section {
+        flex-direction: column;
+        gap: 88px;
+    }
+
+}
+
+@media screen and (min-width: 930px) {
+    .summary_section {
+        width: 100%;
+        max-width: 344px;
+    }
+
+}
+
+@media screen and (min-width: 930px) {
+    .cart_section {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+}
+
+/* @media screen and (min-width: 541px) and (max-width: 930px) {
+    .cart_section {
+        gap: 88px;
+    }
+
+} */
+
+/* 
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+
+    max-width: 332px;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px;
+
+
+   width: -webkit-fill-available;
+   max-width: 172px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px;
+   */

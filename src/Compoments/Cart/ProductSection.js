@@ -8,15 +8,17 @@ export default function ProductSection({ url, name, desc }) {
   return (
     <div className={styles.product_section}>
       <img className={styles.cart_product_image} src={url} alt="product_name" />
-      <div style={{ width: "-webkit-fill-available" }}>
+      <div className={styles.product_info_2} style={{ width: "-webkit-fill-available" }}>
         <div className={styles.product_section_info}>
-          <div className={styles.heading_container}>
-            <p className={styles.body_2}>{name ? name : "Product Name"}</p>
-          </div>
-          <div className={styles.heading_container}>
-            <p className={styles.body_2}>
-              {desc ? desc : "Product Description"}
-            </p>
+          <div>
+            <div className={styles.heading_container}>
+              <p className={styles.body_2}>{name ? name : "Product Name"}</p>
+            </div>
+            <div className={styles.heading_container}>
+              <p className={styles.body_2}>
+                {desc ? desc : "Product Description"}
+              </p>
+            </div>
           </div>
           <div className={styles.heading_container}>
             <p className={styles.body_2}>$ 125</p>

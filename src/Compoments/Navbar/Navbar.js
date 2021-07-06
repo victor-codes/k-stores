@@ -5,7 +5,7 @@ import { CartIcon } from "../../assets/icon/CartIcon";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 
-export default function Navbar({ fill, color, sidebar }) {
+export default function Navbar({ fill, color }) {
   return (
     <header>
       <nav className={styles.header}>

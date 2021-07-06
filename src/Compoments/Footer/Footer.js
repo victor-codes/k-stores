@@ -1,32 +1,12 @@
 import React from "react";
-import { Emoji } from "../../assets/icon/Emoji";
-import { ArrowRight } from "../../assets/icon/ArrowRight";
 import styles from "./Footer.module.css";
+import { MailSection } from "./MailSection";
 import { SocialMedia } from "../../utils/SocialMediaLink.jsx";
 
-export default function Footer() {
+export default function Footer({ children }) {
   return (
     <footer className={styles.footer}>
-      <div className={styles.mail_section}>
-        <div>
-          <div className={styles.newsletter}>
-            <Emoji />
-            <h4 className={styles.heading_4}>WE ALSO MAKE EMAILS</h4>
-          </div>
-          <p className={styles.mail_text}>
-            Recieve updates and offers you’ll actually be interested in.
-            Unsubscriber any time.{" "}
-          </p>
-        </div>
-        <div className={styles.email}>
-          <ArrowRight />
-          <input
-            className={styles.input_field}
-            type="mail"
-            placeholder="Your email"
-          />
-        </div>
-      </div>
+      {children}
       <div className={styles.nav}>
         <nav>
           <h1 className={styles.heading_1}>K stores</h1>

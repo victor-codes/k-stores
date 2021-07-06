@@ -6,7 +6,9 @@ export const CartIcon = ({ fill }) => {
   return (
     <div className="cart_container">
       <div className="number_of_item_container">
-        <p className="number_of_item">{cartItem.length}</p>
+        <p style={{ color: `${fill}` }} className="number_of_item">
+          {cartItem.length}
+        </p>
       </div>
       <svg
         width={24}

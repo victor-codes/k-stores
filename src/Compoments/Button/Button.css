@@ -6,6 +6,7 @@
     padding: 16px;
     width: 100%;
     height: 56px;
+    max-width: 300px;
     background: #000000;
     border-radius: 8px;
     font-family: "Nunito", sans-serif;
@@ -14,9 +15,11 @@
     font-size: 15px;
     line-height: 20px;
     letter-spacing: 0.0125em;
+    gap: 12px;
     color: #FFFFFF;
     border: none;
-
+    cursor: pointer;
+    
 }
 
 .outline {
@@ -39,4 +42,5 @@
     line-height: 20px;
     letter-spacing: 0.0125em;
     color: #2B2B2B;
+    cursor: pointer;
 }

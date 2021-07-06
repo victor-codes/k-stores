@@ -78,7 +78,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
+    padding: 4px;
 }
 
 .quantity_control {
@@ -88,4 +88,29 @@
     align-items: center;
     padding: 0px;
     gap: 8px;
+}
+
+@media screen and (min-width: 640px) {
+    .product_info_2 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .product_section_info {
+        max-width: 264px;
+        width: -webkit-fill-available;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .controls {
+        width: -webkit-fill-available;
+        max-width: 172px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

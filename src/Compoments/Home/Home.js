@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Main from "./Main/Main";
 import Footer from "../Footer/Footer";
+import { MailSection } from "../Footer/MailSection";
 import Product from "./ProductDescription/ProductDescription";
 import { SectionHeader } from "../../utils/SectionHeader/SectionHeader";
 import { Link } from "react-router-dom";
@@ -220,7 +221,9 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <Footer />
+      <Footer>
+        <MailSection />
+      </Footer>
     </div>
   );
 }

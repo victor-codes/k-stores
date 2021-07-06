@@ -113,12 +113,73 @@ button {
   width: 100%;
   height: 100%;
   display: flex;
-  margin-top: 9px;
-  /* align-items: center; */
+  margin-top: 9.5px;
   justify-content: center;
 }
 
 .number_of_item {
   color: black;
   font-size: 1rem;
+}
+
+.max_width_1366 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1136px;
+  margin: 24px auto 0;
+}
+
+.add-to-cart {
+  width: 148px;
+  height: 148px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 24px;
+  width: 100%;
+  border-radius: 50%;
+  height: 24px;
+  background: rgba(239, 239, 239, 0.01);
+}
+
+.child {
+  width: 100%;
+  border-radius: 50%;
+  height: 24px;
+  display: inline-block;
+  /*background-color: gray;*/
+  border-top: 3px solid transparent;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  animation: rotate 750ms ease-out infinite both;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
