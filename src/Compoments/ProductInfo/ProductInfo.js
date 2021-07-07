@@ -6,6 +6,7 @@ import { CartContext } from "../../context/CartContext";
 import Footer from "../Footer/Footer";
 import { Loader } from "../../assets/icon/Loader";
 
+
 export default function ProductInfo() {
   const [loader, setLoader] = useState(false);
   const { cartItem, setCartItem } = useContext(CartContext);

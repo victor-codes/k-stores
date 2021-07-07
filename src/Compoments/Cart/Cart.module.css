@@ -227,3 +227,12 @@
    align-items: center;
    padding: 0px;
    */
+
+.button_width {
+    width: -webkit-fill-available;
+    max-width: 344px;
+}
+
+.button_width span {
+    max-width: 100%;
+}

@@ -1,6 +1,7 @@
 .App,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -104,6 +105,10 @@ button {
   border: none;
 }
 
+button:disabled {
+  opacity: 0.1;
+}
+
 .cart_container {
   position: relative;
 }
@@ -127,7 +132,7 @@ button {
   flex-direction: column;
   width: 100%;
   max-width: 1136px;
-  margin: 24px auto 0;
+  margin: 104px auto 0;
 }
 
 .add-to-cart {
@@ -152,7 +157,6 @@ button {
   border-radius: 50%;
   height: 24px;
   display: inline-block;
-  /*background-color: gray;*/
   border-top: 3px solid transparent;
   border-left: 3px solid #fff;
   border-right: 3px solid #fff;
