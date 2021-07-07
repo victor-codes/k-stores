@@ -6,11 +6,9 @@ import { CartContext } from "../../context/CartContext";
 import Footer from "../Footer/Footer";
 import { Loader } from "../../assets/icon/Loader";
 
-
 export default function ProductInfo() {
   const [loader, setLoader] = useState(false);
   const { cartItem, setCartItem } = useContext(CartContext);
-
   return (
     <div className="App">
       <Navbar fill="#555555" color="#000" />
@@ -78,15 +76,19 @@ export default function ProductInfo() {
               onClick={() => {
                 setLoader(true);
                 setTimeout(() => {
-                  setCartItem([
-                    {
-                      product_name: "product name",
-                      product_img: "product_img",
-                      product_desc: "product desc",
-                      price: "$ 25",
-                    },
-                    ...cartItem,
-                  ]);
+                  if (loader) {
+                    return null;
+                  } else {
+                    setCartItem([
+                      {
+                        product_name: "product name",
+                        product_img: "product_img",
+                        product_desc: "product desc",
+                        price: "$ 25",
+                      },
+                      ...cartItem,
+                    ]);
+                  }
                   setLoader(false);
                 }, 2000);
               }}

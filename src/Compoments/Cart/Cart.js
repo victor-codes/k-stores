@@ -38,30 +38,42 @@ export default function Cart() {
     <div className="App">
       <Navbar fill="#555555" color="#000" />
       <div className="padding margin_4 max_width_1366">
-        <h2 className={styles.sub_heading}>CARTS {/*({cartItem.length})*/}</h2>
-        <div className={styles.cart_section}>
-          {cartItem.length < 1 ? EmptyCartTemplate : cartTemplate}
-          <div className={styles.summary_section}>
-            <h2 className={styles.heading_summary}>Summary</h2>
-            <div className={styles.summary_2}>
-              <div className={styles.inside_summary_container}>
-                <p className={styles.price_header}>Subtotal</p>
-                <span className={styles.price_text}> $ 0.00</span>
-              </div>
-              <div className={styles.inside_summary_container}>
-                <p className={styles.price_header}>Estimated shipping fee</p>
-                <span className={styles.price_text}> $ 0.00</span>
-              </div>
-              <div className={styles.line_divider}></div>
-              <div className={styles.inside_summary_container}>
-                <p className={styles.price_header}>Total</p>
-                <span className={styles.price_text}> $ 0.00</span>
-              </div>
-              <div className={styles.margin_40}>
-                <button disabled className={styles.button_width}>
-                  <Button type="primary" value="Proceed to Checkout" />
-                </button>
-              </div>
+        {/* className={styles.cart_section} */}
+        <div
+          style={{
+            width: "-webkit-fill-available",
+            display: "flex",
+            gap: "16px",
+            flexDirection: "column",
+          }}
+        >
+          <h2 className={styles.sub_heading}>
+            CARTS {/*({cartItem.length})*/}
+          </h2>
+          <div style={{ width: "-webkit-fill-available" }}>
+            {cartItem.length < 1 ? EmptyCartTemplate : cartTemplate}
+          </div>
+        </div>
+        <div className={styles.summary_section}>
+          <h2 className={styles.heading_summary}>SUMMARY</h2>
+          <div className={styles.summary_2}>
+            <div className={styles.inside_summary_container}>
+              <p className={styles.price_header}>Subtotal</p>
+              <span className={styles.price_text}> $ 0.00</span>
+            </div>
+            <div className={styles.inside_summary_container}>
+              <p className={styles.price_header}>Estimated shipping fee</p>
+              <span className={styles.price_text}> $ 0.00</span>
+            </div>
+            <div className={styles.line_divider}></div>
+            <div className={styles.inside_summary_container}>
+              <p className={styles.price_header}>Total</p>
+              <span className={styles.price_text}> $ 0.00</span>
+            </div>
+            <div className={styles.margin_40}>
+              <button disabled className={styles.button_width}>
+                <Button type="primary" value="Proceed to Checkout" />
+              </button>
             </div>
           </div>
         </div>

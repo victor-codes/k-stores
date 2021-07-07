@@ -1,9 +1,12 @@
+import { nanoid } from "nanoid";
 import React, { Suspense } from "react";
+import { Link } from "react-router-dom";
 import styles from "./ProductDescription.module.css";
 
 export default function Product({ name, description, url }) {
+  // const id = nanoid(10).toString();
   return (
-    <article className="no_underline">
+    <Link to={`/product/product-id`} className="no_underline">
       <div className={styles.product}>
         <Suspense
           fallback={
@@ -29,6 +32,6 @@ export default function Product({ name, description, url }) {
           </div>
         </div>
       </div>
-    </article>
+    </Link>
   );
 }

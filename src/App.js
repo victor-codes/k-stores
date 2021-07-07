@@ -6,6 +6,7 @@ import Home from "./Compoments/Home/Home";
 import { lazy, Suspense, useEffect } from "react";
 import CartProvider from "./context/CartContext";
 import ScrollToTop from "./utils/ScrollToTop";
+import SubHome from "./Compoments/SubHome/SubHome";
 
 function App() {
   const Sidebar = lazy(() => import("./Compoments/Sidebar/Sidebar"));
@@ -21,13 +22,15 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/product">
+          <Route path="/product/:id">
             <ProductInfo />
           </Route>
           <Route path="/cart">
             <Cart />
           </Route>
-          <Route path="/sidebar"></Route>
+          <Route path="/:slug">
+            <SubHome />
+          </Route>
         </Switch>
       </Router>
     </CartProvider>

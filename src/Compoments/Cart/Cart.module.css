@@ -83,16 +83,13 @@
     letter-spacing: 0.005em;
     width: 100%;
     max-width: 343px;
-    /* margin-top: 16px; */
     color: #555555;
 }
 
 .empty_cart_message_flex {
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
     justify-content: center;
-    /* height: calc(100vh - 101px); */
     gap: 24px;
     width: -webkit-fill-available;
     max-width: 704px;
@@ -121,14 +118,12 @@
 }
 
 .heading_summary {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    /* identical to box height, or 160% */
-
+    text-transform: uppercase;
     letter-spacing: 0.0015em;
-
     color: #000000;
 }
 
@@ -169,7 +164,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 16px;
     justify-content: space-between;
     padding: 0px;
 }
@@ -236,3 +230,25 @@
 .button_width span {
     max-width: 100%;
 }
+
+@media screen and (min-width: 930px){ 
+    
+    
+}
+/* @media screen and (min-width: 930px) .Cart_cart_section__hDhBb {
+    flex-direction: row;
+    grid-gap: 16px;
+    gap: 16px;
+} 
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-between;
+padding: 0px;
+
+media screen and (max-width: 929px) .Cart_cart_section__hDhBb {
+    flex-direction: column;
+    grid-gap: 88px;
+    gap: 88px;
+    
+    */
