@@ -106,7 +106,7 @@ button {
 }
 
 button:disabled {
-  opacity: 0.1;
+  /* opacity: 0.1; */
 }
 
 .cart_container {
@@ -186,4 +186,8 @@ button:disabled {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.link {
+  text-decoration: none;
 }

@@ -16,7 +16,7 @@ export default function Home() {
         <section>
           <SectionHeader name="MEN SHOES" />
           <div className="flex_row_gap">
-            <Link to="/product">
+            <Link to="/product" className="link">
               <Product
                 name="Product name"
                 description="$ 125"

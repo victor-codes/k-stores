@@ -6,7 +6,7 @@
     padding: 16px;
     width: 100%;
     height: 56px;
-    max-width: 300px;
+    max-width: -webkit-fill-available;
     background: #000000;
     border-radius: 8px;
     font-family: "Nunito", sans-serif;
