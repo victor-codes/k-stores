@@ -27,7 +27,8 @@ body {
   max-width: 992px;
 }
 
-.no_underline, a {
+.no_underline,
+a {
   text-decoration: none;
   width: fit-content;
 }
@@ -106,7 +107,7 @@ button {
 }
 
 button:disabled {
-  opacity: 0.1;
+  opacity: 1;
 }
 
 .cart_container {
@@ -143,6 +144,7 @@ button:disabled {
   }
 
 }
+
 @media screen and (min-width:930px) {
   .max_width_1366 {
     flex-direction: row;
@@ -231,7 +233,7 @@ button:disabled {
 
 .link_slash {
   font-family: "Oswald",
-  serif;
+    serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -239,4 +241,55 @@ button:disabled {
   letter-spacing: 0.0015em;
   color: #000000;
   margin: 0 3px;
+}
+
+.alert_icon {
+  width: 16px;
+  height: 16px;
+}
+
+.alert_box_container {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 104px;
+  padding: 16px;
+}
+
+.alert_box {
+  right: 16px;
+  display: inline-flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.sucess {
+  background: #DCFFE4;
+  border: 1px solid rgba(23, 111, 44, 0.2);
+  border-radius: 6px;
+}
+
+.fail {
+  background: #FFE3E6;
+  border: 1px solid rgba(158, 28, 35, 0.2);
+  border-radius: 6px;
+}
+
+.alert_text {
+  font-size: 1.385rem;
+}
+
+.alert_box div {
+  display: flex;
+  gap: 8px;
+}
+
+@media screen and (min-width: 1080px) {
+  .alert_box_container {
+    right: calc((100vw - 100%));
+  }
+  
 }

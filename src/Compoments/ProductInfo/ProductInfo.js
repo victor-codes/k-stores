@@ -5,12 +5,22 @@ import { Button } from "../Button/Button";
 import { CartContext } from "../../context/CartContext";
 import Footer from "../Footer/Footer";
 import { Loader } from "../../assets/icon/Loader";
+import { Alert } from "../../utils/Alert";
 
 export default function ProductInfo() {
   const [loader, setLoader] = useState(false);
+  const [alert, setAlert] = useState(false);
   const { cartItem, setCartItem } = useContext(CartContext);
+
   return (
     <div className="App">
+      {alert ? (
+        <Alert
+          message="Product Name is succesfully added to cart"
+          type={alert}
+          set={(e) => setAlert(e)}
+        />
+      ) : null}
       <Navbar fill="#555555" color="#000" />
       <div className={styles.padding}>
         <div className={styles.img_container}>
@@ -90,6 +100,7 @@ export default function ProductInfo() {
                     ]);
                   }
                   setLoader(false);
+                  setAlert(true);
                 }, 2000);
               }}
             >
