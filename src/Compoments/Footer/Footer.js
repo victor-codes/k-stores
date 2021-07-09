@@ -55,13 +55,19 @@ export default function Footer({ children }) {
               <div className={styles.address}>
                 <div className={styles.gap_10}>
                   MANHATTAN STORE
-                  <p className={styles.text_size} style={{ width: "256px" }}>
+                  <p
+                    className={styles.text_size}
+                    style={{ width: "100%", maxWidth: "256px" }}
+                  >
                     526 Avenue Of The Americas New York NY
                   </p>
                 </div>
                 <div className={styles.gap_10}>
                   BROOKLYN STORE
-                  <p className={styles.text_size} style={{ width: "221.54px" }}>
+                  <p
+                    className={styles.text_size}
+                    style={{ width: "100%", maxWidth: "221.54px" }}
+                  >
                     118 Knickerbocker Ave East Williamsburg
                   </p>
                 </div>

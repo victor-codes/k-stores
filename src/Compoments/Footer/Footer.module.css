@@ -86,9 +86,14 @@
     font-size: 1.3rem;
     line-height: 19px;
     letter-spacing: 0.0125em;
-    width: 148px;
+    width: 100%;
+    max-width: 127px;
 }
-
+@media screen and (min-width: 930px) {
+    .navlink_category {
+        max-width: 148px;
+    }
+}
 .navlink_category div {
     display: flex;
     flex-direction: column;
@@ -107,7 +112,7 @@
 .wrap {
     display: grid;
     gap: 52px;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between; */
@@ -140,9 +145,11 @@
 }
 
 .address {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    /* display: flex;
+    flex-wrap: wrap; */
     gap: 37px;
+    grid-template-columns: auto;
     margin-top: 122px;
 }
 
