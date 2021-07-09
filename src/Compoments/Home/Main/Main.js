@@ -11,6 +11,7 @@ export default function Main() {
       springConfig: {
         easing: 400,
       },
+      withLoop: true,
       items: [
         {
           id: "1",

@@ -22,7 +22,11 @@
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 10px;
+}
+
+.logo a,
+.user a {
+    margin-left: 10px;
 }
 
 .company_name {
@@ -32,11 +36,8 @@
     font-weight: 400;
     letter-spacing: -0.015em;
     text-align: left;
+    margin-left: 10px;
     text-decoration: none;
-}
-
-.user {
-    gap: 16px;
 }
 
 @media screen and (min-width: 432px) {

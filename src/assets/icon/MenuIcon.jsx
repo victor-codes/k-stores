@@ -4,7 +4,7 @@ import { SidebarContext } from "../../context/Sidebar";
 export const MenuIcon = ({ color }) => {
   const { setToggle } = useContext(SidebarContext);
   return (
-    <button onClick={() => setToggle(true)}>
+    <button style={{ padding: "0" }} onClick={() => setToggle(true)}>
       <svg
         className="w-6 h-6"
         width={24}

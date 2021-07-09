@@ -19,10 +19,13 @@ body {
   padding: 0px;
 }
 
+.section_container section {
+  margin-bottom: 40px;
+}
+
 .section_container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
   margin: 56px auto 0;
   max-width: 992px;
 }
@@ -48,8 +51,11 @@ h6 {
   flex-direction: row;
   align-items: flex-end;
   padding: 0px;
-  gap: 16px;
   overflow: auto;
+}
+
+.flex_row_gap *:not(:first-child):not(:last-child) {
+  margin-left: 16px;
 }
 
 .margin {
@@ -291,5 +297,5 @@ button:disabled {
   .alert_box_container {
     right: calc((100vw - 100%));
   }
-  
+
 }
