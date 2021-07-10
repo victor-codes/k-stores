@@ -6,7 +6,7 @@ import styles from "./ProductDescription.module.css";
 export default function Product({ name, description, url }) {
   // const id = nanoid(10).toString();
   return (
-    <Link to={`/product/product-id`} className="no_underline">
+    <Link to={`/product/id`} className="no_underline">
       <div className={styles.product}>
         <Suspense
           fallback={

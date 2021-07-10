@@ -20,7 +20,10 @@
 .newsletter {
     display: flex;
     align-items: center;
-    gap: 12px;
+}
+
+.newsletter :last-child {
+    margin-left: 12px;
 }
 
 .mail_text {
@@ -89,11 +92,13 @@
     width: 100%;
     max-width: 127px;
 }
+
 @media screen and (min-width: 930px) {
     .navlink_category {
         max-width: 148px;
     }
 }
+
 .navlink_category div {
     display: flex;
     flex-direction: column;
@@ -110,13 +115,11 @@
 }
 
 .wrap {
+    width: 100%;
+    max-width: 594px;
     display: grid;
     gap: 52px;
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
-    /* row-gap: 52px; */
 }
 
 @media screen and (min-width: 990px) {
@@ -125,10 +128,6 @@
         display: grid;
         gap: 0px;
         grid-template-columns: repeat(4, 1fr);
-        /* display: flex;
-        flex-wrap: wrap;
-    justify-content: space-between; */
-        /* row-gap: 52px; */
     }
 }
 
@@ -145,12 +144,18 @@
 }
 
 .address {
-    display: grid;
-    /* display: flex;
-    flex-wrap: wrap; */
-    gap: 37px;
-    grid-template-columns: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    max-width: 525px;
     margin-top: 122px;
+}
+
+@media screen and (max-width: 508px) {
+    .address :last-child {
+        margin-top: 37px;
+    }
 }
 
 .gap_10 {
@@ -165,7 +170,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 6px;
+}
+
+.gap_10 :last-child {
+    margin-top: 6px;
 }
 
 .copyright {
@@ -188,7 +196,6 @@
 
     .address {
         margin-top: 76px;
-        gap: 45px;
     }
 
     .mail_section {
@@ -203,18 +210,27 @@
         flex-direction: row;
     }
 
+    .mail_text {
+        margin-bottom: 0px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .wrap {
+        max-width: 677px;
+    }
+
+}
+
+@media screen and (min-width:1121px) {
     .navlink {
         display: flex;
-        align-items: flex-start;
         justify-content: space-between;
+        align-items: flex-start;
     }
 
     .address {
         margin-top: 0;
-        gap: 37px;
-    }
-
-    .mail_text {
-        margin-bottom: 0px;
     }
 }
