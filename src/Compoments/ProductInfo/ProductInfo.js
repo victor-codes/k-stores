@@ -82,7 +82,7 @@ export default function ProductInfo() {
             </p>
             <button
               disabled={loader}
-              style={{ width: "-webkit-fill-available", padding: "0px" }}
+              style={{ width: "-webkit-fill-available", padding: "0px", marginTop: "32px" }}
               onClick={() => {
                 setLoader(true);
                 setTimeout(() => {

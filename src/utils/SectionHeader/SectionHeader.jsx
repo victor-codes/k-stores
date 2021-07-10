@@ -7,7 +7,7 @@ export const SectionHeader = ({ name }) => {
   return (
     <a href={`/${link}`} className="no_underline">
       <div
-        className="flex margin"
+        className="flex margin margin_16"
       >
         <h3 className={styles.h3}>{name}</h3>
         <ChervonRight />

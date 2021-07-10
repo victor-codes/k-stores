@@ -54,7 +54,7 @@ h6 {
   overflow: auto;
 }
 
-.flex_row_gap *:not(:last-child),
+.flex_row_gap a,
 .column_gap *:not(:last-child) {
   margin-right: 16px;
 }
@@ -63,6 +63,10 @@ h6 {
   gap: 8px;
   margin-left: 16px;
   width: fit-content;
+}
+
+.margin_16 {
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -219,7 +223,6 @@ button:disabled {
 .grid_sub_home {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-rows: repeat(6, 1fr); */
   grid-column-gap: 24px;
   grid-row-gap: 24px;
   width: 100%;
