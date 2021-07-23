@@ -177,6 +177,7 @@ button:disabled {
   border-radius: 50%;
   height: 24px;
   background: rgba(239, 239, 239, 0.01);
+  margin-right: 12px;
 }
 
 .child {

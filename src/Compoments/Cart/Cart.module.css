@@ -1,7 +1,7 @@
 .flex_gap {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    /* gap: 16px; */
     max-width: 704px;
     width: -webkit-fill-available;
 }

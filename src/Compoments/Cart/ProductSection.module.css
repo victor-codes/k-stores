@@ -47,7 +47,7 @@
 }
 
 .quantity_text {
-    font-family: Nunito;
+    font-family: "Nunito", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -61,8 +61,13 @@
     flex-direction: row;
     align-items: center;
     /* justify-content: space-between; */
-    gap: 16px;
+    /* gap: 16px; */
     padding: 0px;
+    margin-bottom: 16px;
+}
+
+.product_section img {
+    margin-right: 16px;
 }
 
 .product_section_info {
