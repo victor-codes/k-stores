@@ -261,10 +261,11 @@ button:disabled {
 .alert_box_container {
   width: 100vw;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: absolute;
-  top: 104px;
+  top: 60px;
   padding: 16px;
+  left: 0;
 }
 
 .alert_box {

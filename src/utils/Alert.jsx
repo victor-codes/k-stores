@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { animated, config, useSpring } from "react-spring";
 
 export const Alert = ({ message, type, set }) => {
@@ -18,7 +18,7 @@ export const Alert = ({ message, type, set }) => {
       />
     </svg>
   );
-  const SuccesIcon = (
+  const SuccessIcon = (
     <svg
       className="w-6 h-6 alert_icon"
       fill="none"
@@ -36,15 +36,23 @@ export const Alert = ({ message, type, set }) => {
   );
 
   const styles = useSpring({
-    transform: type ? `translateX(0%)` : `translateX(110%)`,
+    transform: type ? `translateY(0%)` : `translateY(-100%)`,
     config: { ...config.gentle, duration: 800 },
+  });
+
+  useEffect(() => {
+    if (type) {
+      setTimeout(() => {
+        set(!type);
+      }, 4000);
+    }
   });
 
   return (
     <animated.div style={styles} className="alert_box_container">
       <div className={`alert_box ${{ type } ? "sucess" : "fail"}`}>
         <div>
-          {true ? SuccesIcon : WarningIcon}
+          {true ? SuccessIcon : WarningIcon}
           <p className="alert_text">{message}</p>
         </div>
         <button onClick={() => set(false)}>
