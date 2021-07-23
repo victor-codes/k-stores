@@ -23,9 +23,12 @@
 
 .product_other_img_container {
     display: flex;
-    gap: 8px;
     flex-wrap: wrap;
     margin: 16px 0;
+}
+
+.product_other_img_container img:not(:first-child) {
+    margin-left: 8px;
 }
 
 .product_other_img {
