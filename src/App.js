@@ -1,16 +1,14 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ProductInfo from "./Compoments/ProductInfo/ProductInfo";
-import Cart from "./Compoments/Cart/Cart";
-import Home from "./Compoments/Home/Home";
-import { lazy, Suspense, useEffect } from "react";
+import ProductInfo from "./Components/ProductInfo/ProductInfo";
+import Cart from "./Components/Cart/Cart";
+import Home from "./Components/Home/Home";
 import CartProvider from "./context/CartContext";
 import ScrollToTop from "./utils/ScrollToTop";
-import SubHome from "./Compoments/SubHome/SubHome";
-import Sidebar from "./Compoments/Sidebar/Sidebar";
+import SubHome from "./Components/SubHome/SubHome";
+import Sidebar from "./Components/Sidebar/Sidebar";
 
 function App() {
-  // const Sidebar = lazy(() => import("./Compoments/Sidebar/Sidebar"));
 
   return (
     <CartProvider>

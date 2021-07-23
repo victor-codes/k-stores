@@ -4,13 +4,13 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 0px;
-    gap: 8px;
 }
 
 .product_img {
     width: 196px;
     height: 263px;
     align-self: stretch;
+    margin-bottom: 8px;
 }
 
 .product_img {

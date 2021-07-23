@@ -60,7 +60,7 @@ h6 {
 }
 
 .margin {
-  gap: 8px;
+  /* gap: 8px; */
   margin-left: 16px;
   width: fit-content;
 }
