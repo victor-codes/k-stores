@@ -4,7 +4,6 @@ import styles from "./Cart.module.css";
 import { Button } from "../Button/Button";
 import ProductSection from "./ProductSection";
 import { CartContext } from "../../context/CartContext";
-import { AddToCart } from "../../assets/icon/AddToCart";
 import Footer from "../Footer/Footer";
 
 export default function Cart() {

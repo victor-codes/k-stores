@@ -5,12 +5,16 @@ import { Button } from "../Button/Button";
 import { CartContext } from "../../context/CartContext";
 import Footer from "../Footer/Footer";
 import { Loader } from "../../assets/icon/Loader";
+import { ProductInfoData } from "../../context/DisplayContext";
 import { Alert } from "../../utils/Alert";
 
 export default function ProductInfo() {
   const [loader, setLoader] = useState(false);
   const [alert, setAlert] = useState(false);
+  const { data, setData } = useContext(ProductInfoData);
   const { cartItem, setCartItem } = useContext(CartContext);
+  const url =
+    "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=708&q=80";
 
   return (
     <div className="App">
@@ -24,41 +28,61 @@ export default function ProductInfo() {
       <Navbar fill="#555555" color="#000" />
       <div className={styles.padding}>
         <div className={styles.img_container}>
-          <img
-            className={styles.product_img}
-            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-            alt=""
-          />
+          <img className={styles.product_img} src={data.main_img} alt="" />
           <div className={styles.product_other_img_container}>
             <img
               className={styles.product_other_img}
-              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
+              src={data.other_img}
+              alt="main-page"
+              onClick={() => {
+                setData({ ...data, main_img: url });
+                console.log(data);
+              }}
+            />
+            <img
+              onClick={() => {
+                setData({ ...data, main_img: url });
+                console.log(data);
+              }}
+              className={styles.product_other_img}
+              src={data.other_img}
               alt="main-page"
             />
             <img
               className={styles.product_other_img}
-              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
+              src={data.other_img}
               alt="main-page"
+              onClick={() => {
+                setData({ ...data, main_img: url });
+                console.log(data);
+              }}
             />
             <img
               className={styles.product_other_img}
-              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
+              src={data.other_img}
               alt="main-page"
+              onClick={() => {
+                setData({ ...data, main_img: url });
+                console.log(data);
+              }}
             />
             <img
               className={styles.product_other_img}
-              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
+              src={data.other_img}
               alt="main-page"
+              onClick={() => {
+                setData({ ...data, main_img: url });
+                console.log(data);
+              }}
             />
             <img
               className={styles.product_other_img}
-              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
+              src={data.other_img}
               alt="main-page"
-            />
-            <img
-              className={styles.product_other_img}
-              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-              alt="main-page"
+              onClick={() => {
+                setData({ ...data, main_img: url });
+                console.log(data);
+              }}
             />
           </div>
         </div>
@@ -82,7 +106,11 @@ export default function ProductInfo() {
             </p>
             <button
               disabled={loader}
-              style={{ width: "-webkit-fill-available", padding: "0px", marginTop: "32px" }}
+              style={{
+                width: "-webkit-fill-available",
+                padding: "0px",
+                marginTop: "32px",
+              }}
               onClick={() => {
                 setLoader(true);
                 setTimeout(() => {
@@ -94,7 +122,7 @@ export default function ProductInfo() {
                         product_name: "product name",
                         product_img: "product_img",
                         product_desc: "product desc",
-                        price: "$ 25",
+                        price: "$ 125",
                       },
                       ...cartItem,
                     ]);

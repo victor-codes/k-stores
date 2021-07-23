@@ -7,29 +7,31 @@ import CartProvider from "./context/CartContext";
 import ScrollToTop from "./utils/ScrollToTop";
 import SubHome from "./Components/SubHome/SubHome";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import ProductInfoProvider from "./context/DisplayContext";
 
 function App() {
-
   return (
     <CartProvider>
-      <Router basename="/">
-        <ScrollToTop />
+      <ProductInfoProvider>
+        <Router basename="/">
+          <ScrollToTop />
           <Sidebar />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/product/:id">
-            <ProductInfo />
-          </Route>
-          <Route path="/cart">
-            <Cart />
-          </Route>
-          <Route path="/:slug">
-            <SubHome />
-          </Route>
-        </Switch>
-      </Router>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/product/:id">
+              <ProductInfo />
+            </Route>
+            <Route path="/cart">
+              <Cart />
+            </Route>
+            <Route path="/:slug">
+              <SubHome />
+            </Route>
+          </Switch>
+        </Router>
+      </ProductInfoProvider>
     </CartProvider>
   );
 }

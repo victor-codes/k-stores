@@ -1,10 +1,22 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./ProductDescription.module.css";
+import { ProductInfoData } from "../../../context/DisplayContext";
+// import { ProductInfo } from "../../../DisplayContext";
 
 export default function Product({ name, description, url }) {
+  const { data, setData } = useContext(ProductInfoData);
+  // useEffect(() => {
+  //   console.log(data);
+  // });
   return (
-    <Link to={`/product/id`} className="no_underline">
+    <Link
+      to={`/product/id`}
+      className="no_underline"
+      onClick={() => {
+        setData({ img: url, main_img: url, other_img: url });
+      }}
+    >
       <div className={styles.product}>
         <Suspense
           fallback={
