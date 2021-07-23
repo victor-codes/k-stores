@@ -7,17 +7,16 @@ import { lazy, Suspense, useEffect } from "react";
 import CartProvider from "./context/CartContext";
 import ScrollToTop from "./utils/ScrollToTop";
 import SubHome from "./Compoments/SubHome/SubHome";
+import Sidebar from "./Compoments/Sidebar/Sidebar";
 
 function App() {
-  const Sidebar = lazy(() => import("./Compoments/Sidebar/Sidebar"));
+  // const Sidebar = lazy(() => import("./Compoments/Sidebar/Sidebar"));
 
   return (
     <CartProvider>
       <Router basename="/">
         <ScrollToTop />
-        <Suspense fallback={<div>Loading...</div>}>
           <Sidebar />
-        </Suspense>
         <Switch>
           <Route exact path="/">
             <Home />

@@ -43,7 +43,6 @@ export default function Cart() {
           style={{
             width: "-webkit-fill-available",
             display: "flex",
-            gap: "16px",
             flexDirection: "column",
           }}
         >
@@ -57,7 +56,10 @@ export default function Cart() {
         <div className={styles.summary_section}>
           <h2 className={styles.heading_summary}>SUMMARY</h2>
           <div className={styles.summary_2}>
-            <div className={styles.inside_summary_container}>
+            <div
+              className={styles.inside_summary_container}
+              style={{ marginBottom: "16px" }}
+            >
               <p className={styles.price_header}>Subtotal</p>
               <span className={styles.price_text}> $ 0.00</span>
             </div>
@@ -66,7 +68,11 @@ export default function Cart() {
               <span className={styles.price_text}> $ 0.00</span>
             </div>
             <div className={styles.line_divider}></div>
-            <div className={styles.inside_summary_container}>
+
+            <div
+              className={styles.inside_summary_container}
+              style={{ marginBottom: "16px" }}
+            >
               <p className={styles.price_header}>Total</p>
               <span className={styles.price_text}> $ 0.00</span>
             </div>

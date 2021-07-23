@@ -150,7 +150,7 @@ button:disabled {
 @media screen and (max-width:930px) {
   .max_width_1366 {
     margin-top: 24px;
-    gap: 56px;
+    /* gap: 56px; */
   }
 
 }

@@ -5,8 +5,6 @@ import styles from "./Sidebar.module.css";
 import { SidebarContext } from "../../context/Sidebar";
 
 export default function Sidebar() {
-
-
   const { toggle, setToggle } = useContext(SidebarContext);
 
   const sidebar = useSpring({
@@ -14,16 +12,18 @@ export default function Sidebar() {
     config: { ...config.gentle, duration: 500 },
   });
 
-
   return (
     <animated.div style={sidebar} className={styles.sidebar_container}>
       <nav>
         <div className={styles.header}>
           <h1 className={styles.company_name}>K store</h1>
           <div className={styles.close_btn}>
-            <button className={styles.close_btn} onClick={() => setToggle(false)}>
+            <button
+              className={styles.close_btn}
+              onClick={() => setToggle(false)}
+            >
               <Close />
-              Close
+              <span style={{marginLeft: "5px"}}>Close</span>
             </button>
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function Sidebar() {
               </a>
             </div>
           </div>
-          <div>
+          <div style={{ marginTop: "12px" }}>
             <div className={styles.div_container}>
               <h5 className={styles.sub_heading_1}>Shoes</h5>
             </div>
