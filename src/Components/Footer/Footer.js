@@ -9,7 +9,7 @@ export default function Footer({ children }) {
       {children}
       <div className={styles.nav}>
         <nav>
-          <h1 className={styles.heading_1}>K stores</h1>
+          <h1 className={styles.heading_1}>K store</h1>
           <div className={styles.navlink}>
             <div className={styles.wrap}>
               <div className={styles.navlink_category}>

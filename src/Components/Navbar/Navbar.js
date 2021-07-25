@@ -4,6 +4,7 @@ import { UserIcon } from "../../assets/icon/UserIcon";
 import { CartIcon } from "../../assets/icon/CartIcon";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
+import { Logo } from "../../assets/icon/logo";
 
 export default function Navbar({ fill, color }) {
   return (
@@ -19,6 +20,7 @@ export default function Navbar({ fill, color }) {
               style={{ color: `${color}` }}
               className={styles.company_name}
             >
+              {/* <Logo /> */}
               K store
             </Link>
           </div>
