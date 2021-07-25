@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import { MailSection } from "./MailSection";
 import { SocialMedia } from "../../utils/SocialMediaLink.jsx";
 
 export default function Footer({ children }) {

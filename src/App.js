@@ -19,7 +19,7 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/product/:id">
+            <Route exact={true} path="/product/:id">
               <ScrollToTop />
               <ProductInfo />
             </Route>
@@ -27,7 +27,11 @@ function App() {
               <ScrollToTop />
               <Cart />
             </Route>
-            <Route path="/:slug">
+            <Route path="/cloths">
+              <ScrollToTop />
+              <SubHome />
+            </Route>
+            <Route path="/shoes">
               <ScrollToTop />
               <SubHome />
             </Route>

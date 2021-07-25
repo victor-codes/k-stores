@@ -1,18 +1,17 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import styles from "./ProductDescription.module.css";
-import { ProductInfoData } from "../../../context/DisplayContext";
-// import { ProductInfo } from "../../../DisplayContext";
+import { ProductInfoData } from "../../context/DisplayContext";
+import styles from "./SubHome.module.css";
 
-export default function Product({ name, description, url }) {
-  const { setData } = useContext(ProductInfoData);
+export default function Product({ url, name, description }) {
+  const { data, setData } = useContext(ProductInfoData);
 
   return (
     <Link
       to={`/product/id`}
-      className="no_underline"
+      style={{ textDecoration: "none" }}
       onClick={() => {
-        setData({ img: url, main_img: url, other_img: url });
+        setData({ img: data.url, main_img: data.url, other_img: data.url });
       }}
     >
       <div className={styles.product}>

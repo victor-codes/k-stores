@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
-import Product from "../Home/ProductDescription/ProductDescription";
+import Product from "./Product";
 import Navbar from "../Navbar/Navbar";
 
 export default function SubHome() {
@@ -9,7 +9,7 @@ export default function SubHome() {
   return (
     <div className="App">
       <Navbar fill="#555555" color="#000" />
-      <div style={{ flexDirection: "column" }} className="max_width_1366">
+      <div style={{ flexDirection: "column" }} className="max_width_1366 padding_16">
         <h2 className="heading_sub_home">
           <Link to="/" style={{ font: "inherit", color: "#c4c4c4" }}>
             Home
