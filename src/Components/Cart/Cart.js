@@ -8,6 +8,7 @@ import Footer from "../Footer/Footer";
 
 export default function Cart() {
   const { cartItem } = useContext(CartContext);
+
   const EmptyCartTemplate = (
     <div className={styles.empty_cart_message_flex}>
       <p className={styles.text_size}>There is no item in your cart</p>
@@ -25,18 +26,13 @@ export default function Cart() {
             desc={product.product_desc}
           />
         ))}
-        <ProductSection url="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" />
-        {/* <ProductSection url="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=708&q=80" /> */}
-        {/* <ProductSection url="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fGNsb3RoaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60" /> */}
-        {/* <ProductSection url="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVuJTIwY2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" /> */}
-        {/* <ProductSection url="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" /> */}
       </div>
     </>
   );
   return (
     <div className="App">
       <Navbar fill="#555555" color="#000" />
-      <div className="padding margin_4 max_width_1366">
+      <div className="padding_m margin_4 max_width_1366">
         {/* className={styles.cart_section} */}
         <div
           style={{
@@ -76,7 +72,13 @@ export default function Cart() {
               <span className={styles.price_text}> $ 0.00</span>
             </div>
             <div className={styles.margin_40}>
-              <button disabled className={styles.button_width}>
+              <button
+                disabled={cartItem.length >= 1 ? false : true}
+                onClick={() => {
+                  alert("Continue to checkout");
+                }}
+                className={styles.button_width}
+              >
                 <Button type="primary" value="Proceed to Checkout" />
               </button>
             </div>

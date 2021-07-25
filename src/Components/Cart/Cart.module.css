@@ -182,7 +182,7 @@
     .summary_section {
         width: 100%;
         max-width: 344px;
-        margin-top: 0;
+        margin: 0 0 0 16px;
     }
 
 }
@@ -204,4 +204,8 @@
 
 .button_width span {
     max-width: 100%;
+}
+
+.button_width:disabled {
+    opacity: 0.1;
 }

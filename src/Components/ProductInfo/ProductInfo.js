@@ -119,9 +119,9 @@ export default function ProductInfo() {
                   } else {
                     setCartItem([
                       {
-                        product_name: "product name",
-                        product_img: "product_img",
-                        product_desc: "product desc",
+                        product_name: "Product Name",
+                        product_img: `${data.main_img}`,
+                        product_desc: "Product Description",
                         price: "$ 125",
                       },
                       ...cartItem,

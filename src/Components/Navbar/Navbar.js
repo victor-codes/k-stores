@@ -25,7 +25,7 @@ export default function Navbar({ fill, color }) {
           <div className={styles.category_nav}>
             <Link
               to="/cloths"
-              style={{ color: `${color}` }}
+              style={{ color: `${color}`, marginRight: "16px" }}
               className={styles.category_link}
             >
               Cloths

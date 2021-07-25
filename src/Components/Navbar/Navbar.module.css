@@ -1,6 +1,5 @@
 .header {
     position: sticky;
-    /* left: calc(100vw); */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,7 +53,6 @@
     font-weight: 400;
     letter-spacing: -0.015em;
     text-align: left;
-    margin-left: 10px;
     text-decoration: none;
 }
 
@@ -66,9 +64,16 @@
     .logo_and_link {
         display: flex;
         align-items: flex-end;
-        gap: 56px;
         width: 100%;
         max-width: 308px;
+    }
+
+    .logo {
+        margin-right: 56px;
+    }
+
+    .company_name {
+        margin-left: 0px !important;
     }
 
     .category_nav {
@@ -76,7 +81,6 @@
         flex-direction: row;
         align-items: center;
         padding: 0px;
-        gap: 16px;
     }
 
     .category_link {

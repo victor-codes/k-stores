@@ -14,19 +14,21 @@ function App() {
     <CartProvider>
       <ProductInfoProvider>
         <Router basename="/">
-          <ScrollToTop />
           <Sidebar />
           <Switch>
             <Route exact path="/">
               <Home />
             </Route>
             <Route path="/product/:id">
+              <ScrollToTop />
               <ProductInfo />
             </Route>
             <Route path="/cart">
+              <ScrollToTop />
               <Cart />
             </Route>
             <Route path="/:slug">
+              <ScrollToTop />
               <SubHome />
             </Route>
           </Switch>
