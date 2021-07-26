@@ -54,10 +54,5 @@
 @media screen and (min-width: 540px) {
     .product {
         width: auto;
-        max-width: 272px;
-    }
-
-    a {
-        width: fit-content;
     }
 }
