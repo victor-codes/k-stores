@@ -242,25 +242,25 @@ button:disabled {
   }
 }
 
-@media screen 
-and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .grid_sub_home {
     grid-template-columns: auto auto auto;
   }
+
   .padding_16 {
     padding: 24px;
   }
 }
-@media screen 
-and (min-width: 990px) {
+
+@media screen and (min-width: 990px) {
   .grid_sub_home {
     grid-template-columns: auto auto auto auto;
   }
 }
-@media screen 
-and (min-width: 1136px) {
+
+@media screen and (min-width: 1136px) {
   .padding_16 {
-   padding: 0px;
+    padding: 0px;
   }
 }
 
@@ -277,7 +277,7 @@ and (min-width: 1136px) {
 
 @media screen and (max-width: 768px) {
   .heading_sub_home {
-    margin-left: 16px;
+    /* margin-left: 16px; */
   }
 
   .padding_16 {

@@ -27,12 +27,20 @@ function App() {
               <ScrollToTop />
               <Cart />
             </Route>
-            <Route path="/cloths">
-              <ScrollToTop />
+            <Route path="/men/cloths">
+              {/* <ScrollToTop /> */}
               <SubHome />
             </Route>
-            <Route path="/shoes">
-              <ScrollToTop />
+            <Route path="/women/cloths">
+              {/* <ScrollToTop /> */}
+              <SubHome />
+            </Route>
+            <Route path="/women/shoes">
+              {/* <ScrollToTop /> */}
+              <SubHome />
+            </Route>
+            <Route path="/men/shoes">
+              {/* <ScrollToTop /> */}
               <SubHome />
             </Route>
           </Switch>
