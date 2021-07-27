@@ -4,7 +4,7 @@ import styles from "./ProductDescription.module.css";
 import { ProductInfoData } from "../../../context/DisplayContext";
 // import { ProductInfo } from "../../../DisplayContext";
 
-export default function Product({ name, description, url }) {
+export default function Product({ name, description, price, url }) {
   const { setData } = useContext(ProductInfoData);
 
   return (
@@ -21,8 +21,8 @@ export default function Product({ name, description, url }) {
           <div className={styles.product_name}>
             <h4 className={styles.name_text}> {name}</h4>
           </div>
-          <div className={styles.product_description}>
-            <p className={styles.description_text}>{description}</p>
+          <div className={styles.product_price}>
+            <p className={styles.price_text}>{price}</p>
           </div>
         </div>
       </div>

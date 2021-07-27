@@ -1,11 +1,20 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Product from "./Product";
 import Navbar from "../Navbar/Navbar";
 
-export default function SubHome() {
-  let { slug } = useParams();
+export default function SubHome({ data }) {
+  const pathname = window.location.pathname;
+  const Data = data.map((detail) => (
+    <Product
+      name={detail.name}
+      price={detail.price}
+      url={detail.url}
+      key={detail.id}
+    />
+  ));
+
   return (
     <div className="App">
       <Navbar fill="#555555" color="#000" />
@@ -17,196 +26,10 @@ export default function SubHome() {
           <Link to="/" style={{ font: "inherit", color: "#c4c4c4" }}>
             Home
           </Link>
-          <span className="link_slash">/</span>
-          {slug}
+          {/* <span className="link_slash">/</span> */}
+          {pathname}
         </h2>
-        <div className="grid_sub_home">
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=708&q=80"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWVuJTIwc25lYWtlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1598691800903-24951242c503?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGZvb3R3ZWFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1618329254028-833d820b7f86?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vdHdlYXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1613070120286-98b11cdb9ae2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vdHdlYXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1603773568305-0cda3c871b55?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGZvb3R3ZWFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vdHdlYXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1597248881519-db089d3744a5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb3R3ZWFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGZvb3R3ZWFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVuJTIwc2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1511556532299-8f662fc26c06?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHdvbWVuJTIwc2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8d29tZW4lMjBzaG9lc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fHdvbWVuJTIwc2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1518049362265-d5b2a6467637?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHdvbWVuJTIwc2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1549298916-b41d501d3772?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHdvbWVuJTIwc2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHdvbWVuJTIwc2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1621996659490-3275b4d0d951?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fHdvbWVuJTIwc2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1605812860427-4024433a70fd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDN8fHdvbWVuJTIwc2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVuJTIwY2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVuJTIwY2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1603252109303-2751441dd157?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVuJTIwY2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fG1lbnMlMjBjbG90aGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1492447166138-50c3889fccb1?ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDF8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1615441210794-4f445ff3cb24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVucyUyMGNsb3RoZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1602810319428-019690571b5b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVucyUyMGNsb3RoZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1562157873-818bc0726f68?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fG1lbnMlMjBjbG90aGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1611312449297-a69dc9c3987b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI0fHxtZW5zJTIwY2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />{" "}
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1554568218-0f1715e72254?ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDF8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fGNsb3RoaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1497339100210-9e87df79c218?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fG1lbnMlMjBjbG90aGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1572804013427-4d7ca7268217?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNsb3RoaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxjbG90aGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNsb3RoaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1619473792839-1d3b0355a7c8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTV8fGNsb3RoaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-          <Product
-            name="Product name"
-            description="$ 125"
-            url="https://images.unsplash.com/photo-1602266337967-96b69980e2a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fGNsb3RoaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
-          />
-        </div>
+        <div className="grid_sub_home">{Data}</div>
       </div>
       <Footer />
     </div>

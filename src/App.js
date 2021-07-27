@@ -8,6 +8,7 @@ import ScrollToTop from "./utils/ScrollToTop";
 import SubHome from "./Components/SubHome/SubHome";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import ProductInfoProvider from "./context/DisplayContext";
+import api from "./utils/api.json";
 
 function App() {
   return (
@@ -29,19 +30,19 @@ function App() {
             </Route>
             <Route path="/men/cloths">
               {/* <ScrollToTop /> */}
-              <SubHome />
-            </Route>
-            <Route path="/women/cloths">
-              {/* <ScrollToTop /> */}
-              <SubHome />
-            </Route>
-            <Route path="/women/shoes">
-              {/* <ScrollToTop /> */}
-              <SubHome />
+              <SubHome data={api.men.cloths} />
             </Route>
             <Route path="/men/shoes">
               {/* <ScrollToTop /> */}
-              <SubHome />
+              <SubHome data={api.men.shoes} />
+            </Route>
+            <Route path="/women/cloths">
+              {/* <ScrollToTop /> */}
+              <SubHome data={api.women.cloths} />
+            </Route>
+            <Route path="/women/shoes">
+              {/* <ScrollToTop /> */}
+              <SubHome data={api.women.shoes} />
             </Route>
           </Switch>
         </Router>

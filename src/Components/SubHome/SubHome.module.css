@@ -23,7 +23,7 @@
   height: 263px;
 }
 
-.product_description {
+.product_price {
   display: flex;
   align-self: stretch;
   flex-direction: row;
@@ -41,7 +41,7 @@
   color: #555555;
 }
 
-.description_text {
+.price_text {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: normal;
