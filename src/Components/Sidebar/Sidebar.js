@@ -23,7 +23,7 @@ export default function Sidebar() {
               onClick={() => setToggle(false)}
             >
               <Close />
-              <span style={{marginLeft: "5px"}}>Close</span>
+              <span style={{ marginLeft: "5px" }}>Close</span>
             </button>
           </div>
         </div>
@@ -33,12 +33,12 @@ export default function Sidebar() {
               <h5 className={styles.sub_heading_1}>Cloths</h5>
             </div>
             <div className={styles.div_container}>
-              <a className={styles.body_1} href="/cloths/men">
+              <a className={styles.body_1} href="/men/cloths">
                 Men
               </a>
             </div>
             <div className={styles.div_container}>
-              <a className={styles.body_1} href="/cloths/women">
+              <a className={styles.body_1} href="/women/cloths">
                 Women
               </a>
             </div>
