@@ -7,8 +7,7 @@ body {
 *,
 *::before,
 *::after {
-  font: 62.5% "Oswald",
-    sans-serif;
+  font: 62.5% "Oswald", sans-serif;
   box-sizing: border-box;
 }
 
@@ -68,7 +67,6 @@ h6 {
 }
 
 @media screen and (min-width: 768px) {
-
   .margin {
     margin-left: 0px;
   }
@@ -152,19 +150,17 @@ button:disabled {
   /* gap: 16px; */
 }
 
-@media screen and (max-width:930px) {
+@media screen and (max-width: 930px) {
   .max_width_1366 {
     margin-top: 24px;
     /* gap: 56px; */
   }
-
 }
 
-@media screen and (min-width:930px) {
+@media screen and (min-width: 930px) {
   .max_width_1366 {
     flex-direction: row;
   }
-
 }
 
 .add-to-cart {
@@ -225,7 +221,6 @@ button:disabled {
   text-decoration: none;
 }
 
-
 .grid_sub_home {
   display: grid;
   grid-template-columns: auto;
@@ -276,19 +271,13 @@ button:disabled {
 }
 
 @media screen and (max-width: 768px) {
-  .heading_sub_home {
-    /* margin-left: 16px; */
-  }
-
   .padding_16 {
     padding: 0 16px;
   }
-
 }
 
 .link_slash {
-  font-family: "Oswald",
-    serif;
+  font-family: "Oswald", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -322,13 +311,13 @@ button:disabled {
 }
 
 .sucess {
-  background: #DCFFE4;
+  background: #dcffe4;
   border: 1px solid rgba(23, 111, 44, 0.2);
   border-radius: 6px;
 }
 
 .fail {
-  background: #FFE3E6;
+  background: #ffe3e6;
   border: 1px solid rgba(158, 28, 35, 0.2);
   border-radius: 6px;
 }
@@ -346,5 +335,4 @@ button:disabled {
   .alert_box_container {
     right: calc((100vw - 100%));
   }
-
 }

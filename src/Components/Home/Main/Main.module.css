@@ -1,167 +1,164 @@
 .background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    /* background: #CC021C; */
-    z-index: -10;
-    background-size: cover;
-    background-position: center;
-    /* background-image: url(https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVuJTIwc2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60) */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  /* background: #CC021C; */
+  z-index: -10;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url(https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVuJTIwc2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60) */
 }
 
 .back {
-    width: 100%;
-    z-index: -10;
-    height: calc(100vh - 54px);
+  width: 100%;
+  z-index: -10;
+  height: calc(100vh - 54px);
 }
 
 .absolute_h1 {
-    width: 100%;
-    max-width: 353px;
-    left: 16px;
-    top: 108px;
-    color: #FFFFFF;
-    margin: 0 0 0 16px;
-    font-family: "Oswald", serif;
-    font-weight: normal;
-    font-size: 5.5rem;
-    letter-spacing: 0.0025em;
-    animation: typing 3.5s steps(10, end) forwards,
-    blink-caret .75s step-end infinite;
+  width: 100%;
+  max-width: 353px;
+  left: 16px;
+  top: 108px;
+  color: #ffffff;
+  margin: 0 0 0 16px;
+  font-family: "Oswald", serif;
+  font-weight: normal;
+  font-size: 5.5rem;
+  letter-spacing: 0.0025em;
+  animation: typing 3.5s steps(10, end) forwards,
+    blink-caret 0.75s step-end infinite;
 }
 
 .heading_container {
-    position: absolute;
-    top: 88px;
-    width: 100%;
-    max-width: 1136px;
-    margin: auto;
-    z-index: 1;
+  position: absolute;
+  top: 88px;
+  width: 100%;
+  max-width: 1136px;
+  margin: auto;
+  z-index: 1;
 }
 
 .main_image {
-    overflow: hidden;
-    position: absolute;
-    top: calc((100vh - 90%) /2);
-    left: calc((100vw - 100%));
-    width: 100%;
-    height: 90%;
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) -14px 23px 33px);
-    object-fit: contain;
-    z-index: -9;
+  overflow: hidden;
+  position: absolute;
+  top: calc((100vh - 90%) / 2);
+  left: calc((100vw - 100%));
+  width: 100%;
+  height: 90%;
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) -14px 23px 33px);
+  object-fit: contain;
+  z-index: -9;
 }
 
 .cta_btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 96px;
-    height: 96px;
-    right: 40px;
-    bottom: 40px;
-    border: none;
-    background: #000000;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05),
-        0px 25px 35px rgba(0, 0, 0, 0.03);
-    border-radius: 100px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.3rem;
-    line-height: 19px;
-    letter-spacing: 0.0125em;
-    color: #FFFFFF;
-    padding: 0px;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  right: 40px;
+  bottom: 40px;
+  border: none;
+  background: #000000;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05), 0px 25px 35px rgba(0, 0, 0, 0.03);
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 19px;
+  letter-spacing: 0.0125em;
+  color: #ffffff;
+  padding: 0px;
+  cursor: pointer;
 }
 
 .absolute_center {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    top: 0;
-    height: 100%;
-    z-index: -10;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  z-index: -10;
 }
 
 @media screen and (min-width: 768px) {
-    .absolute_h1 {
-        width: 456px;
-        margin: 0 0 0 24px;
-        font-size: 55px;
-        letter-spacing: -0.005em;
-        line-height: 82px;
-    }
+  .absolute_h1 {
+    width: 456px;
+    margin: 0 0 0 24px;
+    font-size: 55px;
+    letter-spacing: -0.005em;
+    line-height: 82px;
+  }
 
-    .cta_btn {
-        width: 120px;
-        height: 120px;
-        bottom: 64px;
-        right: 72px;
-    }
-
+  .cta_btn {
+    width: 120px;
+    height: 120px;
+    bottom: 64px;
+    right: 72px;
+  }
 }
 
 @media screen and (min-width: 1080px) {
-    .cta_btn {
-        width: 200px;
-        height: 200px;
-        font-size: 2.1rem;
-        line-height: 46px;
-        bottom: 92px;
-        right: calc((100vw - 200px)/8.15789);
-    }
+  .cta_btn {
+    width: 200px;
+    height: 200px;
+    font-size: 2.1rem;
+    line-height: 46px;
+    bottom: 92px;
+    right: calc((100vw - 200px) / 8.15789);
+  }
 
-    .heading_container {
-        left: calc((100% - 1136px)/2);
-    }
+  .heading_container {
+    left: calc((100% - 1136px) / 2);
+  }
 
-    .absolute_h1 {
-        margin: 0;
-        font-size: 7.2rem;
-        line-height: 107px;
-        max-width: 416px;
-    }
+  .absolute_h1 {
+    margin: 0;
+    font-size: 7.2rem;
+    line-height: 107px;
+    max-width: 416px;
+  }
 }
 
 @media screen and (max-width: 360px) {
-    .absolute_h1 {
-        width: unset;
-    }
-
+  .absolute_h1 {
+    width: unset;
+  }
 }
 
 .fill_container {
-    display: flex;
-    width: -webkit-fill-available;
-    justify-content: space-between;
-    max-width: 1344px;
-    padding: 0px;
-    z-index: 10;
+  display: flex;
+  width: -webkit-fill-available;
+  justify-content: space-between;
+  max-width: 1344px;
+  padding: 0px;
+  z-index: 10;
 }
 
 .chervon_left,
 .chervon_right {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .max_width {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .test {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
 }

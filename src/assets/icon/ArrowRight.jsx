@@ -3,7 +3,7 @@ import React from "react";
 export const ArrowRight = () => {
   return (
     <svg
-    className="arrow-right"
+      className="arrow-right"
       width="16"
       height="16"
       viewBox="0 0 16 16"

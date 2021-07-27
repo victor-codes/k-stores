@@ -9,7 +9,10 @@ export default function SubHome() {
   return (
     <div className="App">
       <Navbar fill="#555555" color="#000" />
-      <div style={{ flexDirection: "column" }} className="max_width_1366 padding_16">
+      <div
+        style={{ flexDirection: "column" }}
+        className="max_width_1366 padding_16"
+      >
         <h2 className="heading_sub_home">
           <Link to="/" style={{ font: "inherit", color: "#c4c4c4" }}>
             Home

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Footer.module.css"
+import styles from "./Footer.module.css";
 import { Emoji } from "../../assets/icon/Emoji";
 import { ArrowRight } from "../../assets/icon/ArrowRight";
 

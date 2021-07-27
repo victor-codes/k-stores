@@ -55,7 +55,7 @@ export const Alert = ({ message, type, set }) => {
           {true ? SuccessIcon : WarningIcon}
           <p className="alert_text">{message}</p>
         </div>
-        <button style={{marginLeft: "16px"}} onClick={() => set(false)}>
+        <button style={{ marginLeft: "16px" }} onClick={() => set(false)}>
           <svg
             width="16"
             height="16"

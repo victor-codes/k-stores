@@ -1,100 +1,98 @@
 .header {
-    position: sticky;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 13px 0;
-    width: 100%;
-    max-width: 1136px;
-    margin: auto;
-    z-index: 100;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0;
+  width: 100%;
+  max-width: 1136px;
+  margin: auto;
+  z-index: 100;
 }
 
 @media screen and (max-width: 768px) {
-    .header {
-        padding: 13px 16px;
-    }
+  .header {
+    padding: 13px 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .header {
-        padding: 13px 24px;
-    }
+  .header {
+    padding: 13px 24px;
+  }
 }
 
 @media screen and (min-width: 1136px) {
-    .header {
-        padding: 13px 0px;
-    }
+  .header {
+    padding: 13px 0px;
+  }
 }
 
 .category_nav {
-    display: none;
+  display: none;
 }
 
 .logo,
 .user {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
 }
 
 .logo a,
 .user a {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .company_name {
-    font-family: "Overlock", serif;
-    font-size: 2.4rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: -0.015em;
-    text-align: left;
-    text-decoration: none;
+  font-family: "Overlock", serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  text-align: left;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 432px) {
-    .menu {
-        display: none;
-    }
+  .menu {
+    display: none;
+  }
 
-    .logo_and_link {
-        display: flex;
-        align-items: flex-end;
-        width: 100%;
-        max-width: 308px;
-    }
+  .logo_and_link {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 308px;
+  }
 
-    .logo {
-        margin-right: 56px;
-    }
+  .logo {
+    margin-right: 56px;
+  }
 
-    .company_name {
-        margin-left: 0px !important;
-    }
+  .company_name {
+    margin-left: 0px !important;
+  }
 
-    .category_nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-    }
+  .category_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+  }
 
-    .category_link {
-        display: inline-flex;
-        font-family: "Nunito", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1.5rem;
-        line-height: 20px;
-        text-decoration: none;
-        display: flex;
-        align-items: flex-end;
-        letter-spacing: 0.0025em;
-    }
-
-
+  .category_link {
+    display: inline-flex;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.0025em;
+  }
 }

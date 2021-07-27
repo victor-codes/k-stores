@@ -1,146 +1,141 @@
 .padding {
-    padding: 0 16px 40px;
-    margin-top: 24px;
-    width: 100%;
-    max-width: 1136px;
-    display: flex;
-    flex-wrap: wrap;
+  padding: 0 16px 40px;
+  margin-top: 24px;
+  width: 100%;
+  max-width: 1136px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .img_container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    /* max-width: 488px; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* max-width: 488px; */
 }
 
 .product_img {
-    width: 100%;
-    height: 320px;
-    border: 1px solid #eee;
-    object-fit: cover;
+  width: 100%;
+  height: 320px;
+  border: 1px solid #eee;
+  object-fit: cover;
 }
 
 .product_other_img_container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px 0;
 }
 
 .product_other_img_container img:not(:first-child) {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 .product_other_img {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #eee;
-    object-fit: cover;
-    cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #eee;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .product_info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .heading_container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 4px 0px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px 0px;
+  width: 100%;
 }
 
 .heading_5 {
-    font-family: "Oswald", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 31px;
-    line-height: 46px;
-    letter-spacing: 0.0025em;
-    color: #2B2B2B;
+  font-family: "Oswald", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 31px;
+  line-height: 46px;
+  letter-spacing: 0.0025em;
+  color: #2b2b2b;
 }
 
 .heading_6 {
-    font-family: "Oswald", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 33px;
-    color: #000000;
+  font-family: "Oswald", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 33px;
+  color: #000000;
 }
 
 .text_size {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 27px;
-    letter-spacing: 0.005em;
-    color: #2B2B2B;
-    margin-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: 0.005em;
+  color: #2b2b2b;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 540px) {
-
-    .padding {
-        padding: 0px 24px 40px;
-    }
-
+  .padding {
+    padding: 0px 24px 40px;
+  }
 }
 
 @media screen and (min-width: 1156px) {
-    .padding {
-
-        padding: 0px 0px 40px;
-    }
+  .padding {
+    padding: 0px 0px 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .padding {
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .padding {
-        justify-content: space-between;
-        align-items: center;
-    }
+  .img_container {
+    height: 100%;
+  }
 
-    .img_container {
-        height: 100%;
-    }
+  .product_img {
+    height: 42.9vh;
+    /* max-height: 540px !important; */
+  }
 
-    .product_img {
-        height: 42.9vh;
-        /* max-height: 540px !important; */
-    }
-
-    .product_other_img {
-        width: 56px;
-        height: 64px;
-    }
+  .product_other_img {
+    width: 56px;
+    height: 64px;
+  }
 }
 
 @media screen and (min-width: 1080px) {
-    .padding {
-        margin: 104px auto 0;
-    }
+  .padding {
+    margin: 104px auto 0;
+  }
 
-    .line_divider {
-        width: 1px;
-        height: 624px;
-        background: #000000;
-        margin: 0 24px;
-    }
+  .line_divider {
+    width: 1px;
+    height: 624px;
+    background: #000000;
+    margin: 0 24px;
+  }
 
-    .product_img {
-        height: 60.4vh;
+  .product_img {
+    height: 60.4vh;
+  }
 
-    }
+  .img_container {
+    max-width: 488px;
+  }
 
-    .img_container {
-        max-width: 488px;
-    }
-
-    .heading_container {
-        max-width: 488px;
-    }
+  .heading_container {
+    max-width: 488px;
+  }
 }

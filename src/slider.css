@@ -1,23 +1,21 @@
 .left,
 .right {
-    width: 56px;
-    height: 56px;
+  width: 56px;
+  height: 56px;
 }
 
 @media screen and (min-width: 540px) {
-
-    .left,
-    .right {
-        width: 80px;
-        height: 80px;
-    }
+  .left,
+  .right {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @media screen and (min-width: 992px) {
-
-    .left,
-    .right {
-        width: 104px;
-        height: 104px;
-    }
+  .left,
+  .right {
+    width: 104px;
+    height: 104px;
+  }
 }

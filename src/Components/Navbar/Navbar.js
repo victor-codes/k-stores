@@ -20,8 +20,7 @@ export default function Navbar({ fill, color }) {
               style={{ color: `${color}` }}
               className={styles.company_name}
             >
-              {/* <Logo /> */}
-              K store
+              {/* <Logo /> */}K store
             </Link>
           </div>
           <div className={styles.category_nav}>
