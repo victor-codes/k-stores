@@ -30,7 +30,7 @@ export default function Sidebar() {
         <div className={styles.content}>
           <div>
             <div className={styles.div_container}>
-              <h5 className={styles.sub_heading_1}>Cloths</h5>
+              <h5 className={styles.sub_heading_1}>Clothes</h5>
             </div>
             <div className={styles.div_container}>
               <a className={styles.body_1} href="/clothes/men">
