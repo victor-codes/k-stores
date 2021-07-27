@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Product from "./Product";
 import Navbar from "../Navbar/Navbar";

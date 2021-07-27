@@ -1,0 +1,71 @@
+.center_align {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 53px);
+  display: flex;
+  align-items: center;
+}
+
+.background {
+  mix-blend-mode: luminosity;
+  filter: grayscale(1);
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+}
+
+.scale,
+.background {
+  transition: all 400ms;
+}
+
+.scale:hover .background,
+.scale:focus .background {
+  transform: scale(1.3);
+}
+
+.btn_text {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.7rem;
+  line-height: 23px;
+  letter-spacing: 0.005em;
+  color: #fff;
+  text-align: center;
+  width: 70px;
+}
+
+.btn_container {
+  position: relative;
+  top: -100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.link_container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 17px;
+  grid-template-columns: auto auto;
+  height: 100%;
+  max-height: 272px;
+  padding: 0 16px;
+}
+
+.scale {
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+  overflow: hidden;
+}

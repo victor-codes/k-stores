@@ -4,7 +4,7 @@ import { ProductInfoData } from "../../context/DisplayContext";
 import styles from "./SubHome.module.css";
 
 export default function Product({ url, name, price }) {
-  const { data, setData } = useContext(ProductInfoData);
+  const { setData } = useContext(ProductInfoData);
 
   return (
     <Link

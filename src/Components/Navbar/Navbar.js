@@ -25,14 +25,14 @@ export default function Navbar({ fill, color }) {
           </div>
           <div className={styles.category_nav}>
             <Link
-              to="/men/cloths"
+              to="/clothes"
               style={{ color: `${color}`, marginRight: "16px" }}
               className={styles.category_link}
             >
-              Cloths
+              Clothes
             </Link>
             <Link
-              to="/men/shoes"
+              to="/shoes"
               style={{ color: `${color}` }}
               className={styles.category_link}
             >

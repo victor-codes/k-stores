@@ -33,12 +33,12 @@ export default function Sidebar() {
               <h5 className={styles.sub_heading_1}>Cloths</h5>
             </div>
             <div className={styles.div_container}>
-              <a className={styles.body_1} href="/men/cloths">
+              <a className={styles.body_1} href="/clothes/men">
                 Men
               </a>
             </div>
             <div className={styles.div_container}>
-              <a className={styles.body_1} href="/women/cloths">
+              <a className={styles.body_1} href="/clothes/women">
                 Women
               </a>
             </div>
@@ -48,12 +48,12 @@ export default function Sidebar() {
               <h5 className={styles.sub_heading_1}>Shoes</h5>
             </div>
             <div className={styles.div_container}>
-              <a className={styles.body_1} href="/men/shoes">
+              <a className={styles.body_1} href="/shoes/men">
                 Men
               </a>
             </div>
             <div className={styles.div_container}>
-              <a className={styles.body_1} href="/women/shoes">
+              <a className={styles.body_1} href="/shoes/women">
                 Women
               </a>
             </div>

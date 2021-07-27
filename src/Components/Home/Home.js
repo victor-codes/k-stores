@@ -53,7 +53,7 @@ export default function Home() {
       <Main />
       <div className="section_container">
         <section>
-          <SectionHeader name="MEN SHOES" />
+          <SectionHeader name="MEN SHOES" link="" />
           <div className="flex_row_gap">{menShoes}</div>
         </section>
         <section>
