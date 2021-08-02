@@ -5,6 +5,9 @@
         "id": 1,
         "price": "$ 125",
         "url": "https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVuJTIwY2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
+        "otherImg": [
+          ""
+        ],
         "name": "Product name",
         "desc": "Product Description"
       },
@@ -70,6 +73,9 @@
         "id": 1,
         "price": "$ 125",
         "url": "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=708&q=80",
+        "otherImg": [
+          "https://cdn.shopify.com/s/files/1/1549/3605/products/3J232_SIDE_2_large.jpg"
+        ],
         "name": "Product name",
         "desc": "Product Description"
       },

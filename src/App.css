@@ -223,8 +223,7 @@ button:disabled {
 
 .grid_sub_home {
   display: grid;
-  grid-template-columns: auto;
-  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: 1fr;
   grid-column-gap: 24px;
   grid-row-gap: 24px;
   width: 100%;
@@ -233,13 +232,13 @@ button:disabled {
 
 @media screen and (min-width: 440px) {
   .grid_sub_home {
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 768px) {
   .grid_sub_home {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .padding_16 {
@@ -249,7 +248,7 @@ button:disabled {
 
 @media screen and (min-width: 990px) {
   .grid_sub_home {
-    grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
   }
 }
 

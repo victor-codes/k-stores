@@ -1,10 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useSpringCarousel } from "react-spring-carousel-js";
-
+import { ProductInfoData } from "../../../context/DisplayContext";
 import styles from "./Main.module.css";
 import { LeftSlider } from "../../../assets/icon/LeftSlider";
 import { RightSlider } from "../../../assets/icon/RightSlider";
+import { Link } from "react-router-dom";
+
 export default function Main() {
+  const { setData } = useContext(ProductInfoData);
+  const [count, setCount] = useState(0);
+  const ImageSliderLink = [
+    "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
+    "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+    "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80",
+  ];
+
+  function calculateSliderPos(count) {
+    let num = count % 3;
+    let link = ImageSliderLink[num];
+    return link;
+  }
+
+  useEffect(() => {
+    console.log(calculateSliderPos(count));
+  }, [count]);
+
   const words = ["THE LAST TREND IS HERE"];
   const { carouselFragment, slideToPrevItem, slideToNextItem } =
     useSpringCarousel({
@@ -109,21 +129,39 @@ export default function Main() {
         <div className={styles.fill_container}>
           <button
             type="prev"
-            onClick={slideToPrevItem}
+            onClick={() => {
+              slideToPrevItem();
+              setCount(count - 1);
+            }}
             className={styles.chervon_left}
           >
             <LeftSlider />
           </button>
           <button
             type="next"
-            onClick={slideToNextItem}
+            onClick={() => {
+              slideToNextItem();
+              setCount(count + 1);
+            }}
             className={styles.chervon_right}
           >
             <RightSlider />
           </button>
         </div>
       </div>
-      <button className={styles.cta_btn}>GET IT NOW</button>
+      <Link
+        onClick={() => {
+          setData({
+            img: calculateSliderPos(count),
+            main_img: calculateSliderPos(count),
+            other_img: calculateSliderPos(count),
+          });
+        }}
+        to="/product/id"
+        className={styles.cta_btn}
+      >
+        GET IT NOW
+      </Link>
     </div>
   );
 }
