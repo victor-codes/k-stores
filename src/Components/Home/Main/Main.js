@@ -14,16 +14,8 @@ export default function Main() {
     "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
     "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80",
   ];
-
-  function calculateSliderPos(count) {
-    let num = count % 3;
-    let link = ImageSliderLink[num];
-    return link;
-  }
-
-  useEffect(() => {
-    console.log(calculateSliderPos(count));
-  }, [count]);
+  
+  const [activeSection, setActiveSection] = useState(0);
 
   const words = ["THE LAST TREND IS HERE"];
   const { carouselFragment, slideToPrevItem, slideToNextItem } =
@@ -131,7 +123,7 @@ export default function Main() {
             type="prev"
             onClick={() => {
               slideToPrevItem();
-              setCount(count - 1);
+              setActiveSection((prev) => (prev <= 0 ? 2 : (prev - 1) % 3));
             }}
             className={styles.chervon_left}
           >
@@ -141,7 +133,7 @@ export default function Main() {
             type="next"
             onClick={() => {
               slideToNextItem();
-              setCount(count + 1);
+              setActiveSection((prev) => (prev === 3 ? 0 : prev + 1));
             }}
             className={styles.chervon_right}
           >
@@ -152,9 +144,9 @@ export default function Main() {
       <Link
         onClick={() => {
           setData({
-            img: calculateSliderPos(count),
-            main_img: calculateSliderPos(count),
-            other_img: calculateSliderPos(count),
+            img: ImageSliderLink[activeSection],
+            main_img: ImageSliderLink[activeSection],
+            other_img: ImageSliderLink[activeSection],
           });
         }}
         to="/product/id"
