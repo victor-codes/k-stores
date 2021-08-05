@@ -98,6 +98,7 @@ export default function ProductInfo() {
           </div>
           <div className={styles.heading_container}>
             <p className={styles.text_size}>{data.product_description}</p>
+
             <button
               disabled={loader}
               style={{
