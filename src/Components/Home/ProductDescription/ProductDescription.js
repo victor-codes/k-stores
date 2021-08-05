@@ -4,7 +4,7 @@ import styles from "./ProductDescription.module.css";
 import { ProductInfoData } from "../../../context/DisplayContext";
 // import { ProductInfo } from "../../../DisplayContext";
 
-export default function Product({ name, description, price, url }) {
+export default function Product({ name, description, price, imgUrl }) {
   const { data, setData } = useContext(ProductInfoData);
 
   return (
@@ -14,9 +14,9 @@ export default function Product({ name, description, price, url }) {
       onClick={() => {
         setData({
           ...data,
-          img: url,
-          main_img: url,
-          other_img: url,
+          img: imgUrl,
+          main_img: imgUrl,
+          other_img: imgUrl,
           product_name: name,
           // product_description: description,
           product_price: price,
@@ -24,7 +24,7 @@ export default function Product({ name, description, price, url }) {
       }}
     >
       <div className={styles.product}>
-        <img className={styles.product_img} src={url} alt={name} />
+        <img className={styles.product_img} src={imgUrl} alt={name} />
         <div className={styles.product_info}>
           <div className={styles.product_name}>
             <h4 className={styles.name_text}> {name}</h4>
