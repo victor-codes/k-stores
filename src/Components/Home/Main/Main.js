@@ -133,7 +133,7 @@ export default function Main() {
             type="next"
             onClick={() => {
               slideToNextItem();
-              setActiveSection((prev) => (prev === 3 ? 0 : prev + 1));
+              setActiveSection((prev) => (prev === 2 ? 0 : prev + 1));
             }}
             className={styles.chervon_right}
           >
