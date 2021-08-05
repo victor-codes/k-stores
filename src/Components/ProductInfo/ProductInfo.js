@@ -90,20 +90,14 @@ export default function ProductInfo() {
         <div className={styles.product_info}>
           <div>
             <div className={styles.heading_container}>
-              <h2 className={styles.heading_5}>Product Name</h2>
+              <h2 className={styles.heading_5}>{data.product_name}</h2>
             </div>
             <div className={styles.heading_container}>
-              <h3 className={styles.heading_6}>$ 162</h3>
+              <h3 className={styles.heading_6}>{data.product_price}</h3>
             </div>
           </div>
           <div className={styles.heading_container}>
-            <p className={styles.text_size}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi,
-              porta morbi varius sollicitudin quam. Feugiat a, donec ullamcorper
-              tellus mi suspendisse scelerisque ullamcorper. Mattis nunc duis
-              venenatis, eu neque nulla pellentesque pellentesque. Feugiat
-              cursus lectus volutpat sed ut.
-            </p>
+            <p className={styles.text_size}>{data.product_description}</p>
             <button
               disabled={loader}
               style={{
@@ -119,10 +113,10 @@ export default function ProductInfo() {
                   } else {
                     setCartItem([
                       {
-                        product_name: "Product Name",
+                        product_name: data.product_name,
                         product_img: `${data.main_img}`,
                         product_desc: "Product Description",
-                        price: "$ 125",
+                        price: data.product_price,
                       },
                       ...cartItem,
                     ]);
