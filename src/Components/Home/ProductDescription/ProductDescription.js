@@ -5,14 +5,22 @@ import { ProductInfoData } from "../../../context/DisplayContext";
 // import { ProductInfo } from "../../../DisplayContext";
 
 export default function Product({ name, description, price, url }) {
-  const { setData } = useContext(ProductInfoData);
+  const { data, setData } = useContext(ProductInfoData);
 
   return (
     <Link
       to={`/product/id`}
       className="no_underline"
       onClick={() => {
-        setData({ img: url, main_img: url, other_img: url });
+        setData({
+          ...data,
+          img: url,
+          main_img: url,
+          other_img: url,
+          product_name: name,
+          // product_description: description,
+          product_price: price,
+        });
       }}
     >
       <div className={styles.product}>
