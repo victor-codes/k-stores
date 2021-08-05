@@ -7,7 +7,7 @@ import { RightSlider } from "../../../assets/icon/RightSlider";
 import { Link } from "react-router-dom";
 
 export default function Main() {
-  const { setData } = useContext(ProductInfoData);
+  const { data, setData } = useContext(ProductInfoData);
   const [count, setCount] = useState(0);
   const ImageSliderLink = [
     "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
@@ -144,6 +144,7 @@ export default function Main() {
       <Link
         onClick={() => {
           setData({
+            ...data,
             img: ImageSliderLink[activeSection],
             main_img: ImageSliderLink[activeSection],
             other_img: ImageSliderLink[activeSection],
