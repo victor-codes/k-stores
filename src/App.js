@@ -29,21 +29,38 @@ function App() {
               <ScrollToTop />
               <Cart />
             </Route>
+
             <Route path="/clothes/men">
               {/* <ScrollToTop /> */}
-              <SubHome data={api.men.cloths} />
+              <SubHome header="MEN CLOTHES" data={api.men.cloths} />
             </Route>
             <Route path="/shoes/men">
               {/* <ScrollToTop /> */}
-              <SubHome data={api.men.shoes} />
+              <SubHome header="WOMEN SHOES" data={api.men.shoes} />
             </Route>
             <Route path="/clothes/women">
               {/* <ScrollToTop /> */}
-              <SubHome data={api.women.cloths} />
+              <SubHome header="WOMEN CLOTHES" data={api.women.cloths} />
             </Route>
             <Route path="/shoes/women">
               {/* <ScrollToTop /> */}
-              <SubHome data={api.women.shoes} />
+              <SubHome header="WOMEN SHOES" data={api.women.shoes} />
+            </Route>
+            <Route exact={true} path="/clothes/men">
+              {/* <ScrollToTop /> */}
+              <ProductInfo data={api.men.cloths} />
+            </Route>
+            <Route path="/shoes/men/">
+              {/* <ScrollToTop /> */}
+              <ProductInfo data={api.men.shoes} />
+            </Route>
+            <Route path="/clothes/women/:slug">
+              {/* <ScrollToTop /> */}
+              <ProductInfo data={api.women.cloths} />
+            </Route>
+            <Route path="/shoes/women/:slug">
+              {/* <ScrollToTop /> */}
+              <ProductInfo data={api.women.shoes} />
             </Route>
             <Route path="/clothes">
               <Navigation

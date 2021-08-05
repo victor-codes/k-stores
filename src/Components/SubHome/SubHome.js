@@ -4,8 +4,7 @@ import Footer from "../Footer/Footer";
 import Product from "./Product";
 import Navbar from "../Navbar/Navbar";
 
-export default function SubHome({ data }) {
-  const pathname = window.location.pathname;
+export default function SubHome({ data, header }) {
   const Data = data.map((detail) => (
     <Product
       name={detail.name}
@@ -23,11 +22,7 @@ export default function SubHome({ data }) {
         className="max_width_1366 padding_16"
       >
         <h2 className="heading_sub_home">
-          <Link to="/" style={{ font: "inherit", color: "#c4c4c4" }}>
-            Home
-          </Link>
-          {/* <span className="link_slash">/</span> */}
-          {pathname}
+          {header}
         </h2>
         <div className="grid_sub_home">{Data}</div>
       </div>

@@ -73,8 +73,14 @@
   line-height: 19px;
   letter-spacing: 0.0125em;
   color: #ffffff;
+  text-decoration: none;
   padding: 0px;
   cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.cta_btn:hover {
+  transform: scale(1.08);
 }
 
 .absolute_center {

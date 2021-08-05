@@ -16,7 +16,9 @@ export default function Home() {
       key={detail.id}
       name={detail.name}
       price={detail.price}
-      url={detail.url}
+      path="shoes/men"
+      imgUrl={detail.url}
+      id={detail.id}
     />
   ));
 
@@ -25,7 +27,9 @@ export default function Home() {
       key={detail.id}
       name={detail.name}
       price={detail.price}
-      url={detail.url}
+      path="clothes/men"
+      imgUrl={detail.url}
+      id={detail.id}
     />
   ));
 
@@ -34,7 +38,9 @@ export default function Home() {
       key={detail.id}
       name={detail.name}
       price={detail.price}
-      url={detail.url}
+      path="shoes/women"
+      imgUrl={detail.url}
+      id={detail.id}
     />
   ));
 
@@ -43,7 +49,9 @@ export default function Home() {
       key={detail.id}
       name={detail.name}
       price={detail.price}
-      url={detail.url}
+      path="clothes/women"
+      imgUrl={detail.url}
+      id={detail.id}
     />
   ));
 
