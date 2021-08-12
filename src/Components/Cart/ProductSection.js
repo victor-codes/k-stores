@@ -7,7 +7,7 @@ import { Plus } from "../../assets/icon/Plus";
 import { Link } from "react-router-dom";
 
 export default function ProductSection({ url, name, desc }) {
-  const { setData } = useContext(ProductInfoData);
+  const { data, setData } = useContext(ProductInfoData);
 
   return (
     <div className={styles.product_section}>
@@ -15,9 +15,11 @@ export default function ProductSection({ url, name, desc }) {
         to="/product/id"
         onClick={() => {
           setData({
+            ...data,
             img: url,
             main_img: url,
             other_img: url,
+            product_name: name
           });
         }}
       >

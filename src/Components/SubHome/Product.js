@@ -4,14 +4,14 @@ import { ProductInfoData } from "../../context/DisplayContext";
 import styles from "./SubHome.module.css";
 
 export default function Product({ url, name, price }) {
-  const { setData } = useContext(ProductInfoData);
+  const { data, setData } = useContext(ProductInfoData);
 
   return (
     <Link
       to={`/product/id`}
       style={{ textDecoration: "none" }}
       onClick={() => {
-        setData({ img: url, main_img: url, other_img: url });
+        setData({ ...data, img: url, main_img: url, other_img: url, product_name: name, product_price: price });
       }}
     >
       <div className={styles.product}>

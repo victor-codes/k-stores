@@ -5,28 +5,28 @@
         "id": 1,
         "price": "$ 125",
         "url": "https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVuJTIwY2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
-        "name": "Product name",
+        "name": "Patterned T-shirt",
         "desc": "Product Description"
       },
       {
         "id": 2,
-        "price": "$ 125",
+        "price": "$ 23",
         "url": "https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVuJTIwY2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
-        "name": "Product name",
+        "name": "Blue Jean Jacket",
         "desc": "Product Description"
       },
       {
         "id": 3,
         "price": "$ 125",
         "url": "https://images.unsplash.com/photo-1603252109303-2751441dd157?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVuJTIwY2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
-        "name": "Product name",
+        "name": "Plain T-shirt",
         "desc": "Product Description"
       },
       {
         "id": 4,
         "price": "$ 125",
         "url": "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fG1lbnMlMjBjbG90aGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
-        "name": "Product name",
+        "name": "Hotel plain top",
         "desc": "Product Description"
       },
       {
@@ -54,14 +54,14 @@
         "id": 8,
         "price": "$ 125",
         "url": "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fG1lbnMlMjBjbG90aGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
-        "name": "Product name",
+        "name": "Plain colored top - Different colors",
         "desc": "Product Description"
       },
       {
         "id": 9,
         "price": "$ 125",
         "url": "https://images.unsplash.com/photo-1611312449297-a69dc9c3987b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI0fHxtZW5zJTIwY2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
-        "name": "Product name",
+        "name": "Gray plain sweater",
         "desc": "Product Description"
       }
     ],
@@ -144,12 +144,12 @@
         "id": 1,
         "price": "$ 125",
         "url": "https://images.unsplash.com/photo-1554568218-0f1715e72254?ixid=MnwxMjA3fDB8MHx2aXN1YWwtc2VhcmNofDF8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
-        "name": "Product name",
+        "name": "Leave the road Top",
         "desc": "Product Description"
       },
       {
         "id": 2,
-        "price": "$ 125",
+        "price": "$ 15",
         "url": "https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fGNsb3RoaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60",
         "name": "Plain Grey Tee",
         "desc": "Product Description"
