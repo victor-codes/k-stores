@@ -3,7 +3,7 @@
     "cloths": [
       {
         "id": 1,
-        "price": "$ 125",
+        "price": "$ 9",
         "url": "https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVuJTIwY2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
         "name": "Patterned T-shirt",
         "desc": "Product Description"
@@ -17,14 +17,14 @@
       },
       {
         "id": 3,
-        "price": "$ 125",
+        "price": "$ 18",
         "url": "https://images.unsplash.com/photo-1603252109303-2751441dd157?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVuJTIwY2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
         "name": "Plain T-shirt",
         "desc": "Product Description"
       },
       {
         "id": 4,
-        "price": "$ 125",
+        "price": "$ 7",
         "url": "https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fG1lbnMlMjBjbG90aGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
         "name": "Hotel plain top",
         "desc": "Product Description"
@@ -38,28 +38,28 @@
       },
       {
         "id": 6,
-        "price": "$ 125",
+        "price": "$ 51",
         "url": "https://images.unsplash.com/photo-1615441210794-4f445ff3cb24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVucyUyMGNsb3RoZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
-        "name": "Product name",
+        "name": "Stripped T-shirts - 8 in 1",
         "desc": "Product Description"
       },
       {
         "id": 7,
-        "price": "$ 125",
+        "price": "$ 17",
         "url": "https://images.unsplash.com/photo-1602810319428-019690571b5b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVucyUyMGNsb3RoZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
-        "name": "Product name",
+        "name": "Dotted T-shirt",
         "desc": "Product Description"
       },
       {
         "id": 8,
-        "price": "$ 125",
+        "price": "$ 13",
         "url": "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fG1lbnMlMjBjbG90aGVzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
         "name": "Plain colored top - Different colors",
         "desc": "Product Description"
       },
       {
         "id": 9,
-        "price": "$ 125",
+        "price": "$ 19",
         "url": "https://images.unsplash.com/photo-1611312449297-a69dc9c3987b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI0fHxtZW5zJTIwY2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
         "name": "Gray plain sweater",
         "desc": "Product Description"
@@ -75,7 +75,7 @@
       },
       {
         "id": 2,
-        "price": "$ 125",
+        "price": "$ 89",
         "url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25lYWtlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
         "name": "Nike Air Force 1",
         "desc": "Product Description"
