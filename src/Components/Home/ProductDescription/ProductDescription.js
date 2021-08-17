@@ -1,15 +1,30 @@
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
 import styles from "./ProductDescription.module.css";
 import { ProductInfoData } from "../../../context/DisplayContext";
 // import { ProductInfo } from "../../../DisplayContext";
+import api from "../../../utils/api.json";
 
-export default function Product({ name, description, price, imgUrl }) {
+export default function Product({
+  name,
+  description,
+  price,
+  path,
+  imgUrl,
+  id,
+}) {
+  // const { slug } = useParams();
   const { data, setData } = useContext(ProductInfoData);
 
+  // function valid(param) {
+  //   return param;
+  // }
+  // useEffect(() => {
+  //   console.log(valid(slug));
+  // });
   return (
     <Link
-      to={`/product/id`}
+      to={`/${path}/${id}`}
       className="no_underline"
       onClick={() => {
         setData({

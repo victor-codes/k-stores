@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { ProductInfoData } from "../../context/DisplayContext";
 import styles from "./SubHome.module.css";
 
-export default function Product({ url, name, price }) {
+export default function Product({ url, name, path, price, id }) {
   const { data, setData } = useContext(ProductInfoData);
 
   return (
     <Link
-      to={`/product/id`}
+      to={`/${path}/${id}`}
       style={{ textDecoration: "none" }}
       onClick={() => {
         setData({ ...data, img: url, main_img: url, other_img: url, product_name: name, product_price: price });

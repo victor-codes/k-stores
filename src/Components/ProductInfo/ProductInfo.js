@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import styles from "./ProductInfo.module.css";
 import { Button } from "../Button/Button";
@@ -7,6 +7,8 @@ import Footer from "../Footer/Footer";
 import { Loader } from "../../assets/icon/Loader";
 import { ProductInfoData } from "../../context/DisplayContext";
 import { Alert } from "../../utils/Alert";
+import { useParams } from "react-router";
+import api from "../../utils/api.json";
 
 export default function ProductInfo() {
   const [loader, setLoader] = useState(false);
@@ -15,6 +17,31 @@ export default function ProductInfo() {
   const { cartItem, setCartItem } = useContext(CartContext);
   const url =
     "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=708&q=80";
+  const myrewuest = new Request("api.json");
+  
+  // const { id } = useParams();
+  // function valid(param) {
+  //   let check = api.men.cloths.indexOf(param);
+  //   console.log(check);
+  //   if (api.men.cloths.indexOf.param) {
+  //     console.log(true);
+  //   }
+  //   // fetch(myrewuest)
+
+  //   //   .then((res) => console.log(res.json()))
+  //   //   .catch((res) => console.error("error"));
+  //   // .then((res) =>
+  //   //   res.json()
+  //   // )
+  //   // .then((res) => {
+  //   //   console.log(res);
+  //   // });
+  //   // return param;
+  // }
+
+  // useEffect(() => {
+  //   valid(id);
+  // });
 
   return (
     <div className="App">
