@@ -6,13 +6,13 @@ import { ProductInfoData } from "../../context/DisplayContext";
 import { Plus } from "../../assets/icon/Plus";
 import { Link } from "react-router-dom";
 
-export default function ProductSection({ url, name, desc }) {
+export default function ProductSection({ url, name, desc, path }) {
   const { data, setData } = useContext(ProductInfoData);
 
   return (
     <div className={styles.product_section}>
       <Link
-        to="/product/id"
+        to={`${path}`}
         onClick={() => {
           setData({
             ...data,

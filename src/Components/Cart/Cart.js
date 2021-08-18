@@ -22,6 +22,7 @@ export default function Cart() {
           <ProductSection
             url={product.product_img}
             key={id}
+            path={product.path}
             name={product.product_name}
             desc={product.product_desc}
           />

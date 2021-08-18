@@ -9,6 +9,7 @@ body {
 *::after {
   font: 62.5% "Oswald", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .flex {

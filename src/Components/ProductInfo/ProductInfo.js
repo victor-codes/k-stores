@@ -18,7 +18,13 @@ export default function ProductInfo() {
   const url =
     "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=708&q=80";
   const myrewuest = new Request("api.json");
-  
+const pathname = window.location.pathname;
+  if(alert) {
+    window.scrollTo({
+      top: 0,
+      behaviour: "smooth"
+    })
+  }
   // const { id } = useParams();
   // function valid(param) {
   //   let check = api.men.cloths.indexOf(param);
@@ -37,12 +43,12 @@ export default function ProductInfo() {
   //   //   console.log(res);
   //   // });
   //   // return param;
+  
   // }
 
   // useEffect(() => {
   //   valid(id);
   // });
-
   return (
     <div className="App">
       {alert ? (
@@ -145,10 +151,12 @@ export default function ProductInfo() {
                         product_img: `${data.main_img}`,
                         product_desc: "Product Description",
                         price: data.product_price,
+                        path: `${pathname}`
                       },
                       ...cartItem,
                     ]);
                   }
+                  console.log(pathname);
                   setLoader(false);
                   setAlert(true);
                 }, 2000);
