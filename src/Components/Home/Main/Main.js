@@ -14,7 +14,8 @@ export default function Main() {
     "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
     "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&q=80",
   ];
-  
+  const ProductSliderLink = ["/shoes/men/2", "/shoes/women/1", "/clothes/women/6"];
+
   const [activeSection, setActiveSection] = useState(0);
 
   const words = ["THE LAST TREND IS HERE"];
@@ -150,7 +151,7 @@ export default function Main() {
             other_img: ImageSliderLink[activeSection],
           });
         }}
-        to="/product/id"
+        to={ProductSliderLink[activeSection]}
         className={styles.cta_btn}
       >
         GET IT NOW

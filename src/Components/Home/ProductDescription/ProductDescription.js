@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./ProductDescription.module.css";
 import { ProductInfoData } from "../../../context/DisplayContext";
 // import { ProductInfo } from "../../../DisplayContext";
-import api from "../../../utils/api.json";
+// import api from "../../../utils/api.json";
 
 export default function Product({
   name,

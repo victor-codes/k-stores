@@ -1,7 +1,6 @@
 .App,
 body {
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 *,

@@ -11,8 +11,23 @@ import ProductInfoProvider from "./context/DisplayContext";
 import api from "./utils/api.json";
 import Navigation from "./Components/Navigation/Navigation";
 import Navbar from "./Components/Navbar/Navbar";
+import { useEffect } from "react";
+import axios from "axios";
 
 function App() {
+  useEffect(() => {
+    axios
+      .get(
+        "https://cors-anywhere.herokuapp.com/https://raw.githubusercontent.com/victor-codes/silver-spork/main/api.json",
+        {
+          method: "GET",
+          headers: {
+            "X-Requested-With": "XMLHttpRequest",
+          },
+        }
+      )
+      .then((res) => console.log(res));
+  });
   function validate(number) {}
   return (
     <CartProvider>
