@@ -1,3 +1,6 @@
+checked the code i wrote today 27'09'22, tbh i wrote shit :sob::sob:.
+
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/11ebf2a1-5de4-4d3c-b386-98b94b830294/deploy-status)](https://app.netlify.com/sites/practical-lichterman-35fa81/deploys)
 
 ## Available Scripts
